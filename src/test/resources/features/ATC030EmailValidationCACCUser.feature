@@ -1,0 +1,24 @@
+@Regression @High @TC030 @EmailValidation
+Feature: ATC030 Validating order confirmation email for CA registered Credit card user
+
+Scenario: Validating order confirmation email for CA registered Credit card user  
+
+Given User will log in as CA registered Credit card user
+And User verify log in is successful
+Then User will Add products to cart using quick order "841LM"
+And User will click on Mini cart flyer
+And User will proceed to cart page from mini cart flyer
+When User click on Checkout button in cart page
+Then User Navigates to Checkout page
+And I will select ship to delivery address
+And User will select shipping method
+And User will Click on shipping delivery Save button
+And User will enter credit card details for credit card details Card name "Amex" card number "341111111111111" Exp Month "Aug" Exp Year"2028" CVV "2341" CardHolder Name "AutomationUser"
+And User will click on payment section save button
+Then User will fill details in review order section
+And click on place order
+Then User will be redirected to order confirmation page
+And user naviagates to mailinator website
+And navigates to user inbox "automationusercacc"
+And verifies email receipt and navigate to mail body
+And verifies web elements in email confirmation body
