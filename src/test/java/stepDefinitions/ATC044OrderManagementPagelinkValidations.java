@@ -66,7 +66,7 @@ public class ATC044OrderManagementPagelinkValidations extends BaseClass {
 
 	@Then("^user verifies Submit claim link and navigation$")
 	public void user_verifies_Submit_claim_link_and_navigation() throws Throwable {
-		click(orderManagementPage.OrderManagementSubmitClaimLink);	
+		jsClick(orderManagementPage.OrderManagementSubmitClaimLink);	
 		Thread.sleep(3000);
 		scrollBottom();
 	    jsClick(warrantyClaimPage.WarrantyClaimCheckMark);

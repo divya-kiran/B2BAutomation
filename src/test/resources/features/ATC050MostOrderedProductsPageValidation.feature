@@ -1,4 +1,4 @@
-@Regression @High
+@Regression @High @TC050
 Feature: ATC050 Validation of Most ordered products page
 
 Scenario: Verification of Most ordered products Page

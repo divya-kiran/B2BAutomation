@@ -11,7 +11,7 @@ Then user verifies Add to cart CTA in sticky navigation of PDP page
 
 Scenario: Verification of get support CTA in sticky header
 
-When User navigates to PDP page of product "041A3027"
+When User navigates to PDP page of product "041-0125"
 And Scroll to bottom for sticky navigation
 Then user verifies get support CTA in sticky navigation of PDP page
 

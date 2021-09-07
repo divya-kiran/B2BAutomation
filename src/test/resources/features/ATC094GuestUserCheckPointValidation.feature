@@ -14,7 +14,7 @@ And user verifies profile Section Update Password web elements
 Scenario: Verification of checkout page for guest user
 
 Then User will Add products to cart using quick order "041D9042"
-And User will navigate to PDP page of product "p/10-2109"
+And User will navigate to PDP page of product "p/001A4811"
 And User will Add product to cart from PDP page
 Then user navigates to cart page
 When User click on Checkout button in cart page

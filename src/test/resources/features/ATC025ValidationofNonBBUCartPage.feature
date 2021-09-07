@@ -1,4 +1,4 @@
-@Regression @High @BBU
+@Regression @High @BBU @TC025
 Feature: ATC025 Non BBU validations on cart page
 
 Scenario: Verify when cart contains one non BBU product and other products

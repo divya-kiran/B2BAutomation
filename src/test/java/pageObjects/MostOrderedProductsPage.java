@@ -17,7 +17,7 @@ public class MostOrderedProductsPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'All prices shown are List Price. Add to cart to see your price.')]")
 	public WebElement MostOrderedProductsPriceDisc;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//li[contains(text(),'Products')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading']//li[contains(text(),'Products')]")
 	public WebElement MostOrderedProductsTab;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//li[@class='p3-plp__product-item'])[1]//img")
