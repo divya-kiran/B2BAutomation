@@ -53,11 +53,9 @@ public class ATC039ManageUserValidation extends BaseClass {
 	@Then("^verifies roles section$")
 	public void verifies_roles_section() throws Throwable {
 		isElementDisplayed(profilePage.ManageUserRole, true);
-	    isElementDisplayed(profilePage.ManageUserCompanyAdminCheckBox, true);
-	    isElementDisplayed(profilePage.ManageUserCompanyAdmText, true);
-	    isElementDisplayed(profilePage.ManageUserCompanyEmpCheckBox, true);
+		jsClick(profilePage.ManageUserAccessRolesDD);
+	    isElementDisplayed(profilePage.ManageUserCompanySelectAdmText, true);
 	    isElementDisplayed(profilePage.ManageUserCompanyEmpText, true);
-	    isElementDisplayed(profilePage.ManageUserDiagCheckBox, true);
 	    isElementDisplayed(profilePage.ManageUserDiagText, true);
 	}
 

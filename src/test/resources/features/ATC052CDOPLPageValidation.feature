@@ -17,5 +17,3 @@ Then User verifies category facet section in CDO PLP page
 And User verifies Price facet section in CDO PLP page
 And user clicks on CDO category facet section and verify correct resultset by count
 And user verifes show more link in PLP page
-
-

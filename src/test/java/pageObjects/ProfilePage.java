@@ -158,10 +158,10 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Sold To')]//following-sibling::p")
 	public WebElement SoldToReqLabel;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__sold-to-view']//p[contains(text(),'Dealer External ID')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__sold-to-view']//p[contains(text(),'Partner ID')]")
 	public WebElement SoldToDealerLabel;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__sold-to-view']//p[contains(text(),'Dealer External ID')]//following-sibling::p")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__sold-to-view']//p[contains(text(),'Partner ID')]//following-sibling::p")
 	public WebElement SoldToDealerIDVal;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__sold-to-view']//p[contains(text(),'Customer Number')]")
@@ -233,10 +233,10 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__company-info-ship-to-view']//p[contains(text(),'Ship-to Number')]//following-sibling::p")
 	public WebElement ShipToNumberVal;
 
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__company-info-ship-to-view']//p[contains(text(),'Dealer External ID')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__company-info-ship-to-view']//p[contains(text(),'Partner ID')]")
 	public WebElement ShipToDealerExtLabel;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__company-info-ship-to-view']//p[contains(text(),'Dealer External ID')]//following-sibling::p")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__company-info-ship-to-view']//p[contains(text(),'Partner ID')]//following-sibling::p")
 	public WebElement ShipToDealerExtVal;
 
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__company-info-ship-to-view']//p[contains(text(),'Company Name')]")
@@ -263,10 +263,10 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//div[@id='dialog-body__ship-to-edit']//p[contains(text(),'Ship-to Number')]//following-sibling::p")
 	public WebElement EditShipToNumberVal;
 	
-	@FindBy(how = How.XPATH, using = "//div[@id='dialog-body__ship-to-edit']//p[contains(text(),'Dealer External ID')]//following-sibling::p")
+	@FindBy(how = How.XPATH, using = "//div[@id='dialog-body__ship-to-edit']//p[contains(text(),'Partner ID')]//following-sibling::p")
 	public WebElement EditDealerExtIDVal;
 
-	@FindBy(how = How.XPATH, using = "//div[@id='dialog-body__ship-to-edit']//p[contains(text(),'Dealer External ID')]")
+	@FindBy(how = How.XPATH, using = "//div[@id='dialog-body__ship-to-edit']//p[contains(text(),'Partner ID')]")
 	public WebElement EditDealerExtIDLabel;
 	
 	@FindBy(how = How.XPATH, using = "//form[@id='editShipToAddressForm']//span[contains(text(),'Company Name*')]")
@@ -413,10 +413,10 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//input[@value='b2badmingroup' and  @id='manageUserForm_role_0']")
 	public WebElement ManageUserCompanyAdminCheckBox;
 
-	@FindBy(how = How.XPATH, using = "//label[@for='manageUserForm_role_0']//strong[contains(text(),'Company Administrator')]//parent::label")
-	public WebElement ManageUserCompanyAdmText;
+	@FindBy(how = How.XPATH, using = "//div[@data-dropdown='p3-dropdown__manageUserForm_role']//div[@class='p3-dropdown__button']//strong[contains(text(),'Company Administrator')]")
+	public WebElement ManageUserCompanySelectAdmText;
 	
-	@FindBy(how = How.XPATH, using = "//label[@for='manageUserForm_role_1']//strong[contains(text(),'Company Employee')]//parent::label")
+	@FindBy(how = How.XPATH, using = "//div[@data-dropdown='p3-dropdown__manageUserForm_role']//span[@class='p3-dropdown__item-content']//strong[contains(text(),'Company Employee') and not (contains(text(),'Diagnostics'))]")
 	public WebElement ManageUserCompanyEmpText;
 	
 	@FindBy(how = How.XPATH, using = "//input[@value='b2bcustomergroup' and  @id='manageUserForm_role_1']")
@@ -425,7 +425,7 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//input[@value='DIAGNOSTICS_DEALER' and  @id='manageUserForm_role_2']")
 	public WebElement ManageUserDiagCheckBox;
 	
-	@FindBy(how = How.XPATH, using = "//label[@for='manageUserForm_role_2']//strong[contains(text(),'Company Employee with Diagnostics')]//parent::label")
+	@FindBy(how = How.XPATH, using = "//div[@data-dropdown='p3-dropdown__manageUserForm_role']//span[@class='p3-dropdown__item-content']//strong[contains(text(),'Company Employee with Diagnostics')]")
 	public WebElement ManageUserDiagText;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__edit-user-row']//p[contains(text(),'Access Rights*')]")
@@ -433,6 +433,9 @@ public class ProfilePage extends BaseClass{
 
 	@FindBy(how = How.XPATH, using = "//div[@data-dropdown='p3-dropdown__manageUserForm_accessRights']//div[@class='p3-dropdown__button']")
 	public WebElement ManageUserAccessRightsDD;
+	
+	@FindBy(how = How.XPATH, using = "//div[@data-dropdown='p3-dropdown__manageUserForm_role']//div[@class='p3-dropdown__button']")
+	public WebElement ManageUserAccessRolesDD;
 	
 	@FindBy(how = How.XPATH, using = "//input[@id='p3-dropdown__manageUserForm_accessRights-0' and @value='fullAccess']")
 	public WebElement ManageUserAccessRightsDDFullaccess;
@@ -557,10 +560,10 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//input[@id='p3-dropdown__issueInvitationForm_role-0' and @value='b2badmingroup']//parent::label")
 	public WebElement InviteUserRoleDDCompAdmin;
 	
-	@FindBy(how = How.XPATH, using = "//input[@id='p3-dropdown__issueInvitationForm_role-1' and @value='b2bcustomergroup']//parent::label")
+	@FindBy(how = How.XPATH, using = "//div[@data-dropdown='p3-dropdown__issueInvitationForm_role']//div[@class='p3-dropdown__button']//strong[contains(text(),'Company Employee') and not (contains(text(),'Diagnostics'))]")
 	public WebElement InviteUserRoleDDCompEmp;
 	
-	@FindBy(how = How.XPATH, using = "//input[@id='p3-dropdown__issueInvitationForm_role-2' and @value='DIAGNOSTICS_DEALER']//parent::label")
+	@FindBy(how = How.XPATH, using = "//input[@id='p3-dropdown__issueInvitationForm_role-1' and @value='DIAGNOSTICS_DEALER']//parent::label")
 	public WebElement InviteUserRoleDDDiag;
 
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-account__invite-user-row']//p[contains(text(),'Access Rights*')]")

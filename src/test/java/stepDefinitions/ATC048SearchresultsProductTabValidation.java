@@ -15,7 +15,6 @@ public class ATC048SearchresultsProductTabValidation extends BaseClass {
 	public void verify_Search_results_page_header_elements() throws Throwable {
 	    isElementDisplayed(searchResultsPage.SearchText, true);
 	    isElementDisplayed(searchResultsPage.PriceDiscText, true);
-	    isElementDisplayed(searchResultsPage.SearchLabel, true);
 	}
 
 	@Then("^verify products tab is displaying results$")

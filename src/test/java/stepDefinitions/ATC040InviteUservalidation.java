@@ -83,7 +83,7 @@ public class ATC040InviteUservalidation extends BaseClass {
 	@Given("^User select roles in invite user section$")
 	public void user_select_roles_in_invite_user_section() throws Throwable {
 		jsClick(profilePage.InviteUserRoleDD);
-		jsClick(profilePage.InviteUserRoleDDCompEmp);
+		jsClick(profilePage.InviteUserRoleDDCompAdmin);
 	}
 
 	@Given("^selects options from access rights dropdown in invite user section$")

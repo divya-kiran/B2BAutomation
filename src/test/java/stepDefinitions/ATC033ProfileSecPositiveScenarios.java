@@ -48,7 +48,7 @@ public class ATC033ProfileSecPositiveScenarios extends BaseClass {
 
 	@Then("^Verifies required error for first name and last name text box$")
 	public void verifies_required_error_for_first_name_and_last_name_text_box() throws Throwable {
-	    click(profilePage.FirstNameAndLastNameTextBox);
+	    jsClick(profilePage.FirstNameAndLastNameTextBox);
 	    clear(profilePage.FirstNameAndLastNameTextBox);
 	    click(profilePage.NameandContactHeading);
 	    isElementDisplayed(profilePage.FirstNameAndLastNameReqMsg, true);
