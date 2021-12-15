@@ -36,6 +36,7 @@ public class ATC057CDOPartsPLPValidation extends BaseClass {
 
 	@Then("^User verifies category facet section in CDO Parts PLP page$")
 	public void user_verifies_category_facet_section_in_CDO_Parts_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPCategory, true);
 	    isElementDisplayed(plpPage.CDOPartsBrackets, true);
 	    isElementDisplayed(plpPage.CDOPartsElectricals, true);

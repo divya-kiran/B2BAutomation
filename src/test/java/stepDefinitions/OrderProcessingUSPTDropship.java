@@ -30,7 +30,7 @@ public class OrderProcessingUSPTDropship extends BaseClass {
 		Thread.sleep(2000);
 		jsClick(pdpPage.ProductAddToCartCTA);
 		Thread.sleep(2000);
-		click(homePage.LiftMasterLogo);
+		jsClick(homePage.LiftMasterLogo);
 	}
 	@Then("^User will click on dropship address link$")
 	public void user_will_Click_on_dropship_address_link() throws Throwable {

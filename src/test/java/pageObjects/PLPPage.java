@@ -23,7 +23,7 @@ public class PLPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h2[contains(text(),'Garage Door Opener Systems')]")
 	public WebElement GDOTitle;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'All prices shown are List Price. Add to cart to see your price.')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(@class,'p3-plp__heading')]//span[contains(text(),'All prices shown are')]//parent::li")
 	public WebElement PriceDisclaimerPLP;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//button[contains(text(),'Remove')]")
@@ -38,7 +38,7 @@ public class PLPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//span[contains(text(),'GDO Accessories')]")
 	public WebElement GDOAccFacet;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//span[contains(text(),'GDO Operators')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//span[contains(text(),'GDO Openers')]")
 	public WebElement GDOOperatorFacet;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//span[contains(text(),'GDO Finishing')]")
@@ -77,7 +77,7 @@ public class PLPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-plp__products']//li[4])//h2")
 	public WebElement PLPproductName;
 	
-	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-plp__products']//li[4])//p")
+	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-plp__products']//li[4])//div[@class='p3-plp__product-description']")
 	public WebElement PLPproductSumm;
 	
 	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-plp__products']//li[4])//span")

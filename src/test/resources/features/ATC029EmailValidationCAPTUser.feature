@@ -1,4 +1,4 @@
-@Regression @High @EmailValidation
+@Regression @High @EmailValidation @TC029
 Feature: ATC029 Validating order confirmation email for CA registered Payment Terms user
 
 Scenario: Validating order confirmation email for CA registered Payment Terms user  

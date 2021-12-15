@@ -50,7 +50,7 @@ public class OrderProcessingUSCC extends BaseClass {
 	
 	@Given("^User will navigate to homepage$")
 	public void User_will_navigate_to_homepage() throws Throwable {
-		click(homepage.LiftMasterLogo);
+		jsClick(homepage.LiftMasterLogo);
 	}
 	
 	@Then("^User will scroll to delivery save and click on save$")

@@ -36,6 +36,7 @@ public class ATC053GateOperatorPLPPageValidation extends BaseClass {
 
 	@Then("^User verifies category facet section in Gate Operator PLP page$")
 	public void user_verifies_category_facet_section_in_Gate_Operator_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPCategory, true);
 	    isElementDisplayed(plpPage.GateAccFacet, true);
 	    isElementDisplayed(plpPage.GateOperatorFacet, true);

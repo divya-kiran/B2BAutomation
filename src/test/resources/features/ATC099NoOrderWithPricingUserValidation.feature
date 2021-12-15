@@ -10,12 +10,6 @@ And User will navigate to PDP page of product "p/02-51227"
 And User will Add product to cart from PDP page
 And User will click on Mini cart flyer
 And User will proceed to cart page from mini cart flyer
-##When User click on Checkout button in cart page
-##Then User Navigates to Checkout page
-##And User will select shipping method
-##And User will Click on shipping delivery Save button
-##Then User will fill details in review order section
-##And user verify Place order is disabled on place order
 
 Scenario: Validate order history detail page for No order Limited Pricing user
 

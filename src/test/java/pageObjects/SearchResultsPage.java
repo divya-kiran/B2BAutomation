@@ -17,11 +17,8 @@ public class SearchResultsPage extends BaseClass{
 	@FindBy(how = How.CLASS_NAME, using = "p3-plp__search-term")
 	public WebElement SearchText;
 	
-	@FindBy(how = How.CLASS_NAME, using = "p3-plp__search-message")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading']//span[@class='p3-plp__search-message']")
 	public WebElement SearchResultsPriceDisc;
-	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'You searched for')]")
-	public WebElement SearchLabel;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__heading']//li[contains(text(),'Products')]//span)[1]")
 	public WebElement SearchResultsProductTabcount;
@@ -29,7 +26,7 @@ public class SearchResultsPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__heading']//li[contains(text(),'Resources')]//span)[1]")
 	public WebElement SearchResultsResourcesTabcount;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'All prices shown are List Price. Add to cart to see your price.')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(@class,'p3-plp__heading')]//span[contains(text(),'All prices shown are')]//parent::li")
 	public WebElement PriceDiscText;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//button[contains(text(),'Category')]")
@@ -101,10 +98,10 @@ public class SearchResultsPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs-content']//li[@class='p3-plp__product-item'])[1]//h2")
 	public WebElement FirstProdName;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs-content']//li[@class='p3-plp__product-item'])[1]//p")
+	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs-content']//li[@class='p3-plp__product-item'])[1]//div[@class='p3-plp__product-description']")
 	public WebElement FirstProdSummary;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs-content']//li[@class='p3-plp__product-item'])[1]//span")
+	@FindBy(how = How.XPATH, using = "(//div[contains(@class,'p3-plp__tabs-content')]//li[@class='p3-plp__product-item'])[1]//span[contains(@class,'price')]")
 	public WebElement FirstProdPrice;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs-content']//li[@class='p3-plp__product-item'])[1]//button")
@@ -113,16 +110,16 @@ public class SearchResultsPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs-content']//li[@class='p3-plp__product-item'])[1]//input")
 	public WebElement FirstProdQTYBox;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//button[contains(text(),'Literature type')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//button[contains(text(),'Document type')]")
 	public WebElement LiteratureTypeLabel;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//button[contains(text(),'Literature type')]//following-sibling::ul//li//span[1])[1]")
+	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//button[contains(text(),'Document type')]//following-sibling::ul//li//span[1])[1]")
 	public WebElement LiteratureTypeFacet1Label;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//button[contains(text(),'Literature type')]//following-sibling::ul//li//span[1])[2]")
+	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//button[contains(text(),'Document type')]//following-sibling::ul//li//span[1])[2]")
 	public WebElement LiteratureTypeFacet2Label;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//button[contains(text(),'Literature type')]//following-sibling::ul//li//span[1])[3]")
+	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//button[contains(text(),'Document type')]//following-sibling::ul//li//span[1])[3]")
 	public WebElement LiteratureTypeFacet3Label;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//button[contains(text(),'Asset type')])[1]")

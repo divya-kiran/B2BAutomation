@@ -101,10 +101,10 @@ public class CartPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//button[contains(@data-dialog,'clear-cart')]")
 	public WebElement CartPageClearcartIcon;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-product__total-price-block'])[1]//p[2]")
+	@FindBy(how = How.XPATH, using = "(//div[contains(@class,'p3-product__total-price')])[1]//p[@class='p3-product__my-price']")
 	public WebElement CartPageProductPriceTot1;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-product__total-price-block'])[2]//p[2]")
+	@FindBy(how = How.XPATH, using = "(//div[contains(@class,'p3-product__total-price')])[2]//p[@class='p3-product__my-price']")
 	public WebElement CartPageProductPriceTot2;
 	
 	@FindBy(how = How.XPATH, using = "(//button[contains(@class,'p3-product__button-remove')])[1]")

@@ -18,5 +18,3 @@ And User verifies Price facet section in GDO PLP page
 And User verifies Rail Length facet section in GDO PLP page
 And user clicks on category facet section and verify correct resultset by count
 And user verifes show more link in PLP page
-
-

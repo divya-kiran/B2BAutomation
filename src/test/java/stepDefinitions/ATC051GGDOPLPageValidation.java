@@ -42,6 +42,7 @@ public class ATC051GGDOPLPageValidation extends BaseClass {
 
 	@Then("^User verifies category facet section in GDO PLP page$")
 	public void user_verifies_category_facet_section_in_GDO_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPRemoveFacet, true);
 	    isElementDisplayed(plpPage.GDOFacetRemove, true);
 	    isElementDisplayed(plpPage.PLPCategory, true);

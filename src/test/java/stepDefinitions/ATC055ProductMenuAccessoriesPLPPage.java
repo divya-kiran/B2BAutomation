@@ -36,6 +36,7 @@ public class ATC055ProductMenuAccessoriesPLPPage extends BaseClass {
 
 	@Then("^User verifies category facet section in Accessories PLP page$")
 	public void user_verifies_category_facet_section_in_Accessories_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPCategory, true);
 	    isElementDisplayed(plpPage.AccessoriesCDOFacet, true);
 	}

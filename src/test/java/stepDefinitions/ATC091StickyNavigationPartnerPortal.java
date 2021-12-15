@@ -42,7 +42,6 @@ public class ATC091StickyNavigationPartnerPortal extends BaseClass {
 	@Then("^verifies sticky header in search results page$")
 	public void verifies_sticky_header_in_search_results_page() throws Throwable {
 		scrollBottom();
-		isElementDisplayed(stickyPage.Yousearchedfor, true);
 		isElementDisplayed(stickyPage.SearchString, true);
 		isElementDisplayed(stickyPage.PLPStickyPriceDisc, true);
 		isElementDisplayed(stickyPage.ProductsTabSticky, true);

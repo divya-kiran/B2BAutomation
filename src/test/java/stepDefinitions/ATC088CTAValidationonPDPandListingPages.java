@@ -136,7 +136,7 @@ public class ATC088CTAValidationonPDPandListingPages extends BaseClass {
 	@Then("^verify Learn more CTA on Search results page$")
 	public void verify_Learn_more_CTA_on_Search_results_page() throws Throwable {
 		ScrollToElement(searchresultsPage.FirstProdName);
-		isElementDisplayed("//h2[contains(text(),'"+productName+"')]//parent::div//div[@class='p3-plp__product-footer']//a[contains(text(),'Learn More')]", true);
+		isElementDisplayed("//h2[contains(text(),'"+productName+"')]//parent::div//div[@class='p3-plp__product-footer']//a[contains(text(),'Learn more')]", true);
 		try {		
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//h2[contains(text(),'"+productName+"')]//parent::div//parent::li[@class='p3-plp__product-item']")));
@@ -150,7 +150,7 @@ public class ATC088CTAValidationonPDPandListingPages extends BaseClass {
 	@Then("^verify Learn more CTA for configurable products on Search results page$")
 	public void verify_Learn_more_CTA_for_configurable_products_on_Search_results_page() throws Throwable {
 		ScrollToElement(searchresultsPage.FirstProdName);
-		isElementDisplayed("//h2[text()='"+productName+"']//parent::div//div[@class='p3-plp__product-footer']//a[contains(text(),'Learn More')]", true);
+		isElementDisplayed("//h2[text()='"+productName+"']//parent::div//div[@class='p3-plp__product-footer']//a[contains(text(),'Learn more')]", true);
 		try {		
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//h2[text()='"+productName+"']//parent::div//parent::li[@class='p3-plp__product-item']")));

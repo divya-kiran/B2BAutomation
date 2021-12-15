@@ -65,7 +65,7 @@ public class ATC027EmailValidationUSPTuser extends BaseClass {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		isElementDisplayed("//span[contains(text(),'2021 Chamberlain Group, Inc')]", true);
+		isElementDisplayed("//span[contains(text(),'The Chamberlain Group LLC - 300')]", true);
 		isElementDisplayed("//span[contains(text(),'300 Windsor Drive Oak Brook, IL, 60523')]", true);
 		driver.navigate().to(configFileReader.getApplicationUrl());
 	}

@@ -15,7 +15,6 @@ public class ATC048SearchresultsProductTabValidation extends BaseClass {
 	public void verify_Search_results_page_header_elements() throws Throwable {
 	    isElementDisplayed(searchResultsPage.SearchText, true);
 	    isElementDisplayed(searchResultsPage.PriceDiscText, true);
-	    isElementDisplayed(searchResultsPage.SearchLabel, true);
 	}
 
 	@Then("^verify products tab is displaying results$")
@@ -52,7 +51,6 @@ public class ATC048SearchresultsProductTabValidation extends BaseClass {
 		String productcounts = getText(searchResultsPage.CategoryFacet1Label);
 		String[] productcounts1 = productcounts.split("\\(");
 		String productcounts2 = productcounts1[1].substring(0,productcounts1[1].length()-1);
-		System.out.println("The facet product count is:"+productcounts2);
 		int productcountlabel = Integer.valueOf(productcounts2);
 		jsClick(searchResultsPage.CategoryFacet1Label);
 		Thread.sleep(5000);
