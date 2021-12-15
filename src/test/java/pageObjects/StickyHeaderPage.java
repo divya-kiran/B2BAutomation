@@ -65,7 +65,7 @@ public class StickyHeaderPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//h2[contains(text(),'Commercial Door Operator Systems')]")
 	public WebElement CDOStickyTitle;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//p[contains(text(),'All prices shown are List Price. Add to cart to see your price')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//span[contains(text(),'All prices shown are')]")
 	public WebElement PLPStickyPriceDisc;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//li[contains(text(),'Products')]")

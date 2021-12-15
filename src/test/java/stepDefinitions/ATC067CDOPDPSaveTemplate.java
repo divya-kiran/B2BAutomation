@@ -2,7 +2,9 @@ package stepDefinitions;
 
 import java.util.Random;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
@@ -42,7 +44,15 @@ public class ATC067CDOPDPSaveTemplate extends BaseClass {
 	public void navigate_to_My_templates_and_verify_template_created_successfully() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"my-company/account-product-config-templates");	
 		isElementDisplayed("//h3[contains(text(),'"+MyTemplateName+"')]", true);
-		click("//h3[contains(text(),'"+MyTemplateName+"')]//parent::div//div[@class='p3-templates__template-head']//button");
+		try {		
+			explicitWaitVisible(driver.findElement(By.xpath("//h3[contains(text(),'"+MyTemplateName+"')]//parent::div//div[@class='p3-templates__template-head']//button")));
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//h3[contains(text(),'"+MyTemplateName+"')]//parent::div//div[@class='p3-templates__template-head']//button")));
+			pageLoadTimeout();
+		} catch (Exception e) {
+			e.printStackTrace();
+			Assert.assertTrue("Element Not Found" + driver.findElement(By.xpath("//h3[contains(text(),'"+MyTemplateName+"')]//parent::div//div[@class='p3-templates__template-head']//button")) + "| Error - " + e,false);
+		} 
 		isElementDisplayed("//p[contains(text(),'Template(s):')]", true);
 	}
 }

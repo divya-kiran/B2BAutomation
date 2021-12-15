@@ -14,7 +14,7 @@ public class MostOrderedProductsPage extends BaseClass{
 	WebDriver driver;
 	WebDriverWait wait;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'All prices shown are List Price. Add to cart to see your price.')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(@class,'p3-plp__heading')]//span[contains(text(),'All prices shown are')]//parent::li")
 	public WebElement MostOrderedProductsPriceDisc;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading']//li[contains(text(),'Products')]")
@@ -26,7 +26,7 @@ public class MostOrderedProductsPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//li[@class='p3-plp__product-item'])[1]//h2")
 	public WebElement MostOrderedProductsName;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//li[@class='p3-plp__product-item'])[1]//p")
+	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//li[@class='p3-plp__product-item'])[1]//div[@class='p3-plp__product-description']")
 	public WebElement MostOrderedProductSummary;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-plp__tabs']//li[@class='p3-plp__product-item'])[1]//span")

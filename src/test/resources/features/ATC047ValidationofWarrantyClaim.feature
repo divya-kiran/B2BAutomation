@@ -17,4 +17,3 @@ And verifies success message and page navigation
 And navigates to user inbox "automationuseruspt"
 And verifies Warranty claim email receipt and navigate to mail body
 And verifies web elements in email confirmation body for Warranty claim confirmation email
-

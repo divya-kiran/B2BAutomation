@@ -137,7 +137,7 @@ public class ATC047ValidationofWarrantyClaim extends BaseClass {
 			e.printStackTrace();
 			driver.navigate().to(configFileReader.getApplicationUrl());
 		}
-		isElementDisplayed("//span[contains(text(),'2021 Chamberlain Group')]", true);
+		isElementDisplayed("//span[contains(text(),'2021 The Chamberlain Group LLC')]", true);
 		isElementDisplayed("//span[contains(text(),'300 Windsor Drive Oak Brook, IL')]", true);
 		driver.navigate().to(configFileReader.getApplicationUrl());
 	}

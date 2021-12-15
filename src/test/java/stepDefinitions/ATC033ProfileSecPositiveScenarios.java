@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import java.util.Random;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
@@ -48,7 +50,7 @@ public class ATC033ProfileSecPositiveScenarios extends BaseClass {
 
 	@Then("^Verifies required error for first name and last name text box$")
 	public void verifies_required_error_for_first_name_and_last_name_text_box() throws Throwable {
-	    click(profilePage.FirstNameAndLastNameTextBox);
+	    jsClick(profilePage.FirstNameAndLastNameTextBox);
 	    clear(profilePage.FirstNameAndLastNameTextBox);
 	    click(profilePage.NameandContactHeading);
 	    isElementDisplayed(profilePage.FirstNameAndLastNameReqMsg, true);
@@ -61,7 +63,7 @@ public class ATC033ProfileSecPositiveScenarios extends BaseClass {
 	    clear(profilePage.PrimaryPhoneTB);
 	    click(profilePage.NameandContactHeading);
 	    isElementDisplayed("//input[@id='account-form__primary-phone']//parent::label//span[contains(text(),'Required')]", true);
-	    sendKeys(profilePage.PrimaryPhoneTB, "1234567890");
+	    
 	}
 
 	@Then("^verifies cancel button is enabled$")
@@ -71,7 +73,10 @@ public class ATC033ProfileSecPositiveScenarios extends BaseClass {
 
 	@Then("^User enter text in the text boxes present in Name and contact section$")
 	public void user_enter_text_in_the_text_boxes_present_in_Name_and_contact_section() throws Throwable {
-		sendKeys(profilePage.FirstNameAndLastNameTextBox, "AutomationUser USPT");
+		Random rnd = new Random();
+	    int number = rnd.nextInt(999999999);
+	    sendKeys(profilePage.PrimaryPhoneTB, Integer.toString(number)+"0");
+	    sendKeys(profilePage.FirstNameAndLastNameTextBox, "AutomationUser USPT");
 		click(profilePage.NameandContactHeading);
 	}
 

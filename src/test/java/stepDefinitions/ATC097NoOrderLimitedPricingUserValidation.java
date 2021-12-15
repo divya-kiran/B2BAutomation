@@ -35,8 +35,6 @@ public class ATC097NoOrderLimitedPricingUserValidation extends BaseClass {
 	    isElementDisplayed(plpPage.PLPproductName, true);
 	    isElementDisplayed(plpPage.PLPproductSumm, true);
 	    isElementDisplayed(plpPage.PLPproductprice, true);
-	    isElementDisplayed(plpPage.PLPproductQTYBOX, true);
-	    isElementdisabled(plpPage.PLPproductAddtoCartCTA, false);
 	}
 
 	@Then("^User will navigate to PDP page and verify add to cart is disabled$")

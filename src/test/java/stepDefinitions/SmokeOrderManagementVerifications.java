@@ -77,7 +77,7 @@ public class SmokeOrderManagementVerifications extends BaseClass {
 
 	@Given("^user navigates to Warranty claim  page$")
 	public void user_navigates_to_Warranty_claim_page() throws Throwable {
-	    click(orderManagementPage.OrderManagementSubmitClaimLink);	    
+	    jsClick(orderManagementPage.OrderManagementSubmitClaimLink);	    
 	}
 
 	@Given("^user clicks on check box$")

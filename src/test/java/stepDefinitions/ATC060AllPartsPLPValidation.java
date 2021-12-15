@@ -36,6 +36,7 @@ public class ATC060AllPartsPLPValidation extends BaseClass {
 
 	@Then("^User verifies category facet section in ALL Parts Parts PLP page$")
 	public void user_verifies_category_facet_section_in_ALL_Parts_Parts_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPCategory, true);
 	    isElementDisplayed(plpPage.CDOPartsFacet, true);
 	    isElementDisplayed(plpPage.GatePartsFacet, true); 

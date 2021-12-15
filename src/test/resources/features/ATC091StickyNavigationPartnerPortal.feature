@@ -23,5 +23,7 @@ Then verifies sticky header in cart page
 
 Scenario: Verification of Most ordered products sticky header
 
+Given User will log in as US registered Credit card user
+And User verify log in is successful
 When User navigates to Most ordered products page
 Then verifies sticky header in Most ordered products page

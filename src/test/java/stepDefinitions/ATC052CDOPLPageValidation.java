@@ -34,6 +34,7 @@ public class ATC052CDOPLPageValidation extends BaseClass {
 
 	@Then("^User verifies category facet section in CDO PLP page$")
 	public void user_verifies_category_facet_section_in_CDO_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPCategory, true);
 	    isElementDisplayed(plpPage.CDOAccFacet, true);
 	    isElementDisplayed(plpPage.CDOOperatorFacet, true);

@@ -36,6 +36,7 @@ public class ATC056GDOPartsPLPValidation extends BaseClass {
 
 	@Then("^User verifies category facet section in GDO Parts PLP page$")
 	public void user_verifies_category_facet_section_in_GDO_Parts_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPCategory, true);
 	    isElementDisplayed(plpPage.GDOPartsLightLens, true);
 	    isElementDisplayed(plpPage.GDOPartsElectrical, true);

@@ -23,7 +23,7 @@ public class MyTemplatesPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Templates can be saved from product detail pages. Please visit the product details page of an operator family of your choice to configure and save your template')]")
 	public WebElement MyTemplatesdesc;
 	
-	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Select')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-templates__heading']//button[contains(text(),'Select')]")
 	public WebElement SelectButton;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-templates__heading-footer']//button[contains(text(),'Cancel')]")

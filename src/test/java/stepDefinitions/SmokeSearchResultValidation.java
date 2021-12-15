@@ -30,7 +30,6 @@ public class SmokeSearchResultValidation extends BaseClass {
 
 	@Then("^Verify Search results page header$")
 	public void verify_Search_results_page_header() throws Throwable {
-	   isElementDisplayed(searchResultsPage.SearchLabel, true);
 	   isElementDisplayed(searchResultsPage.SearchResultsPriceDisc, true);
 	}
 

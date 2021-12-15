@@ -40,7 +40,8 @@ And verify Page by product count
 
 Scenario: Verification of My Most ordered products page
 
+Given User will log in as US registered Credit card user
+And User verify log in is successful
 Given User navigates to favorite products
 And Verify page by URL "favorite-products"
-##And Verify Page by title "Test title"
 And verify Page by product count

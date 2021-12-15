@@ -36,6 +36,7 @@ public class ATC054AccessControlSystemsPLP extends BaseClass {
 
 	@Then("^User verifies category facet section in Access Control PLP page$")
 	public void user_verifies_category_facet_section_in_Access_Control_PLP_page() throws Throwable {
+		explicitWaitVisible(plpPage.PLPCategory);
 		isElementDisplayed(plpPage.PLPCategory, true);
 	    isElementDisplayed(plpPage.AccessControlAccFacet, true);
 	    isElementDisplayed(plpPage.AccessControlsFacet, true);	    

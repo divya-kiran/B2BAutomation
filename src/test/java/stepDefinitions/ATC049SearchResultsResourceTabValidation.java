@@ -15,7 +15,6 @@ public class ATC049SearchResultsResourceTabValidation extends BaseClass {
 	public void verify_header_elements_in_resource_tab_section() throws Throwable {
 		isElementDisplayed(searchResultsPage.SearchText, true);
 	    isElementDisplayed(searchResultsPage.PriceDiscText, true);
-	    isElementDisplayed(searchResultsPage.SearchLabel, true);	    
 	}
 
 	@Then("^User verifies literature type facet section in resource tab$")
