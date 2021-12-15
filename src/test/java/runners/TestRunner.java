@@ -18,7 +18,11 @@ import java.io.IOException;
         features = "src/test/resources/features",
         glue = {"stepDefinitions"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-        tags = {"@Smoke"},
+
+        tags = {"@Regression"},
+
+        tags = {"@TC029"},
+
         monochrome = true
 )
 public class TestRunner {
