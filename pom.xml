@@ -86,7 +86,7 @@
 
 	</dependencies>
 		<properties>
-		<envname>UAT</envname>
+		<envname>QA</envname>
 		<browsername>CHROME</browsername>
 		</properties>
 	
