@@ -23,9 +23,10 @@ public class SmokeSearchResultValidation extends BaseClass {
 	 
 	@When("^User enter text into product search box \"([^\"]*)\"$")
 	public void user_enter_text_into_product_search_box(String arg1) throws Throwable {
-	   sendKeys(homepage.HeaderSearchTextBox, arg1);
-	   homepage.HeaderSearchTextBox.sendKeys(Keys.RETURN);
-	   CompareExactText(searchResultsPage.SearchText, arg1);
+//	   sendKeys(homepage.HeaderSearchTextBox, arg1);
+//	   homepage.HeaderSearchTextBox.sendKeys(Keys.RETURN);
+//	   CompareExactText(searchResultsPage.SearchText, arg1);
+		searchText("8500");
 	}
 
 	@Then("^Verify Search results page header$")
@@ -46,8 +47,8 @@ public class SmokeSearchResultValidation extends BaseClass {
 
 	@Then("^User click on resources tab$")
 	public void user_click_on_resources_tab() throws Throwable {
-	   click(searchResultsPage.SearchResultsResourcesTabcount);
 	   Thread.sleep(2000);
+	   searchClick("atomic-tab[tab-id='resources']", "button[part='tab']");
 	}
 
 	@Then("^Verify resources tab by count$")

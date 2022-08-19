@@ -1,15 +1,28 @@
 package stepDefinitions;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import pageObjects.LoginPage;
 import pageObjects.ProfilePage;
 
 public class ATC039ManageUserValidation extends BaseClass {
 	ProfilePage profilePage= PageFactory.initElements(driver, ProfilePage.class);
+	LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
+	
+	@Given("^User will log in as US registered user$")
+	public void user_will_log_in_as_US_registered_user() throws Throwable {
+		driver.navigate().to(configFileReader.getApplicationUrl()+"logout");
+		pageLoadTimeout();
+	   sendKeys(loginpage.userName, "ravi.teja@chamberlain.com");
+	   sendKeys(loginpage.password, "Test@123");
+	   click(loginpage.PartnerAccountSignInHeader);
+	   jsClick(loginpage.signinButton);
+	   }
 
 	@Given("^User scrolls to Manage user section and verify header elements$")
 	public void user_scrolls_to_Manage_user_section_and_verify_header_elements() throws Throwable {
@@ -100,7 +113,7 @@ public class ATC039ManageUserValidation extends BaseClass {
 	    isElementDisplayed(profilePage.ManageUserNewPassword, true);
 	    isElementDisplayed(profilePage.ManageUserConfirmNewPassword, true);
 	    isElementDisplayed(profilePage.ManageUserResetPWDCancelButton, true);
-	    isElementDisplayed(profilePage.ManageUserResetPWDUpdateButton, true);
+	    //isElementDisplayed(profilePage.ManageUserResetPWDUpdateButton, true);
 	    jsClick(profilePage.ManageUserResetPWDCancelButton);
 	}
 

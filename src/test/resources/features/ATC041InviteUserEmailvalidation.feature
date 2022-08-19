@@ -3,7 +3,7 @@ Feature: ATC041 Invite user Email Validation
 
 Scenario: Invitation email validation
 
-Given User will log in as US registered Payment Term user
+Given User will log in as US registered user
 And User verify log in is successful
 Given User navigate to myaccount page
 And user clicks on Invite button and navigate to Invite user form

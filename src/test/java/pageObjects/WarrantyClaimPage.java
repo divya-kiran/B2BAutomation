@@ -38,7 +38,7 @@ public class WarrantyClaimPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'customer.service@chamberlain.com')]")
 	public WebElement WContactLinkTCPage;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Your Warranty Support Claim has been submitted')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Your Warranty Support Claim has been submitted')]")
 	public WebElement ToastMessage;
 	
 	@FindBy(how = How.NAME, using = "serviceDate")

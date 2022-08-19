@@ -19,13 +19,19 @@ public class ATC062SingleSKUPDPStickyNavig extends BaseClass {
 	@Then("^User verifies sticky navigation headers$")
 	public void user_verifies_sticky_navigation_headers() throws Throwable {
 	    isElementDisplayed(pdpPage.OverviewLink, true);
-	    isElementDisplayed(pdpPage.WhatsIncludedlink, true);
+	    isElementDisplayed(pdpPage.Incentivelink, true);
 	    isElementDisplayed(pdpPage.Descriptionlink, true);
 	    isElementDisplayed(pdpPage.specsandwarrlink, true);
 	    isElementDisplayed(pdpPage.Resourceslink, true);
 	    isElementDisplayed(pdpPage.YouMayAlsolike, true);
 	}
 
+	@Then("User clicks on Incentives program in sticky navigation$")
+	public void user_clicks_on_Incentives_program_in_sticky_navigation() throws Throwable {
+	    jsClick(pdpPage.Incentivelink);
+	    Thread.sleep(1000);
+	}
+	
 	@Then("^User clicks on whats included in sticky navigation$")
 	public void user_clicks_on_whats_included_in_sticky_navigation() throws Throwable {
 	    jsClick(pdpPage.WhatsIncludedlink);
@@ -36,6 +42,15 @@ public class ATC062SingleSKUPDPStickyNavig extends BaseClass {
 	public void verifies_web_elements_in_whats_included_section() throws Throwable {
 		isElementDisplayed(pdpPage.IncludedHeading, true);
 	    isElementDisplayed(pdpPage.IncludesProduct1, true);
+	}
+	
+	@Then("^verifies web elements in Incentive section$")
+	public void verifies_web_elements_in__section() throws Throwable {
+		isElementDisplayed(pdpPage.IncentivesHeading, true);
+	    isElementDisplayed(pdpPage.MyQHeading, true);
+	    isElementDisplayed(pdpPage.LearnMoreCTA, true);
+	    isElementDisplayed(pdpPage.QuantityIncentiveHeading, true);
+	    isElementDisplayed(pdpPage.AddMoreCTA, true);
 	}
 
 	@Then("^User clicks on description in sticky navigation$")

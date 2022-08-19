@@ -1,4 +1,4 @@
-@Regression @High @PLP
+@Regression @High @PLP @TC051
 Feature: ATC051 Validation of GDO PLP page
 
 Scenario: Verification of GDO PLP Page
@@ -15,6 +15,5 @@ Scenario: Verification of facets in GDO PLP Page
 When User navigates to GDO PLP page
 Then User verifies category facet section in GDO PLP page
 And User verifies Price facet section in GDO PLP page
-And User verifies Rail Length facet section in GDO PLP page
 And user clicks on category facet section and verify correct resultset by count
 And user verifes show more link in PLP page

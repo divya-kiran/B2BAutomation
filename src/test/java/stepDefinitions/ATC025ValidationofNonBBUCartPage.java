@@ -9,12 +9,14 @@ import pageObjects.CartPage;
 import pageObjects.CheckoutPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.PDPPage;
 
 public class ATC025ValidationofNonBBUCartPage extends BaseClass {
 	CheckoutPage checkout = PageFactory.initElements(driver, CheckoutPage.class);
 	LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 	CartPage cartPage = PageFactory.initElements(driver, CartPage.class);
 	HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+	PDPPage pdpPage = PageFactory.initElements(driver, PDPPage.class);
 	
 	String appurlnonBBU = configFileReader.getApplicationUrl();
 
@@ -42,6 +44,15 @@ public class ATC025ValidationofNonBBUCartPage extends BaseClass {
 		}
 		
 	}
+	
+	@Given("^User will Add BBU product to cart from PDP page$")
+	public void user_will_Add_BBU_product_to_cart_from_PDP_page() throws Throwable {
+		Thread.sleep(2000);
+		sendKeys(pdpPage.AddRails, "1");
+		jsClick(pdpPage.HeadandRailsAddToCartCTA);
+		Thread.sleep(2000);
+		jsClick(homePage.LiftMasterLogo);
+	}
 
 	@Then("^User verifies PopUP for single non BBU product$")
 	public void user_verifies_PopUP_for_single_non_BBU_product() throws Throwable {
@@ -64,6 +75,7 @@ public class ATC025ValidationofNonBBUCartPage extends BaseClass {
 	    isElementDisplayed(cartPage.NonBBUModalProductImage, true);
 	    isElementDisplayed(cartPage.NonBBUModalProductImage2, true);
 	    jsClick(cartPage.RemoveItemsContinueShopping);
+	    Thread.sleep(2000);
 	    verifypagetitle("| Home Page");
 	}
 

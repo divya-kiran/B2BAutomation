@@ -1,6 +1,11 @@
 package stepDefinitions;
 
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
@@ -15,6 +20,7 @@ import pageObjects.LoginPage;
 import pageObjects.MiniCartFlyerPage;
 import pageObjects.OrderConfirmationPage;
 import pageObjects.QuickOrderPage;
+import org.openqa.selenium.interactions.Actions;
 
 public class SmokeOrderprocessingUSPT extends BaseClass {
 	
@@ -35,7 +41,7 @@ public class SmokeOrderprocessingUSPT extends BaseClass {
 	   sendKeys(loginpage.password, "Test@123");
 	   click(loginpage.PartnerAccountSignInHeader);
 	   jsClick(loginpage.signinButton);
-	}
+	   }
 	
 	@Given("^User will log in as No order Limited Pricing user$")
 	public void user_will_log_in_as_No_order_Limited_Pricing_user() throws Throwable {
@@ -131,6 +137,7 @@ public class SmokeOrderprocessingUSPT extends BaseClass {
 	public void user_will_log_in_as_US_NonBBU_user_user() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"logout");
 		pageLoadTimeout();
+	   Thread.sleep(3000);
 	   sendKeys(loginpage.userName, "automationusernonbbu@mailinator.com");
 	   sendKeys(loginpage.password, "Test@123");
 	   click(loginpage.PartnerAccountSignInHeader);
@@ -140,7 +147,14 @@ public class SmokeOrderprocessingUSPT extends BaseClass {
 	
 	@Given("^User verify log in is successful$")
 	public void user_verify_log_in_is_successful() throws Throwable {
-	    isElementDisplayed(homepage.HeaderSearchTextBox, true);
+	    //isElementDisplayed(homepage.HeaderSearchTextBox, true);
+		if(!driver.findElements(By.id("onetrust-accept-btn-handler")).isEmpty()){
+			
+			click(homepage.acceptCookies);
+		 }else{
+		        
+		 }
+		searchTextBoxDisplayed("atomic-search-box[class='search-box-item hydrated']", "div[class='grow flex items-center']");
 	}
 
 	@Then("^User will Add products to cart using quick order \"([^\"]*)\"$")
@@ -176,6 +190,18 @@ public class SmokeOrderprocessingUSPT extends BaseClass {
 	public void i_will_select_ship_to_delivery_address() throws Throwable {
 	    
 	}
+	
+	@Then("^I will click on Add new Address$")
+	public void i_will_click_on_Add_new_Address() throws Throwable {
+	    click(checkoutPage.GuestAddnewAddress);
+	}
+	
+	@Then("^User will add guest new address$")
+	public void User_will_add_guest_new_address() throws Throwable {
+	    
+	}
+	
+	
 
 	@Then("^User will select shipping method$")
 	public void i_will_select_shipping_method() throws Throwable {

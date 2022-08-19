@@ -15,7 +15,6 @@ Scenario: Submitting form and email validation
 Given User navigate to myaccount page
 And user clicks on add ship to address button
 Then User enters information in editable fields on add ship to address form
-And verify save to address button is enabled
 And Click on add to ship to addres save button
 And verifies add ship to address form success toast message
 And navigates to user inbox "automationuseruspt"

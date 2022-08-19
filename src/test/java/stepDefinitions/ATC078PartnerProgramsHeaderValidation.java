@@ -13,9 +13,9 @@ public class ATC078PartnerProgramsHeaderValidation extends BaseClass {
 	@Then("^verify Partner connect header$")
 	public void verify_Partner_connect_header() throws Throwable {
 	    elementHover(homePage.PartnerProgramsTab);
-	    isElementDisplayed(homePage.PartnerRewardsHeading, true);
-	    jsClick(homePage.ConnectToMyQKey);
-	    verifypageURL("/connect");
+	    isElementDisplayed(homePage.AboutPconnectLink, true);
+	    jsClick(homePage.AboutPconnectLink);
+	    verifypageURL("/partnerconnect");
 	}
 
 	@Then("^click on About Partner Connect link and verify page$")
@@ -32,7 +32,10 @@ public class ATC078PartnerProgramsHeaderValidation extends BaseClass {
 
 	@Then("^verify partner rewards header$")
 	public void verify_partner_rewards_header() throws Throwable {
-	    	    
+		elementHover(homePage.PartnerProgramsTab);
+	    isElementDisplayed(homePage.ConnectToMyQKey, true);
+	    jsClick(homePage.ConnectToMyQKey);
+	    verifypageURL("/connect");
 	}
 
 	@Then("^click on connect to MyQ and Key link and verify page$")
@@ -53,7 +56,7 @@ public class ATC078PartnerProgramsHeaderValidation extends BaseClass {
 	@Then("^click on quantity discount and free frieght link and verify page$")
 	public void click_on_quantity_discount_and_free_frieght_link_and_verify_page() throws Throwable {
 	    elementHover(homePage.PartnerProgramsTab);
-	    isElementDisplayed(homePage.PartnerDiscHeader, true);
+	    isElementDisplayed(homePage.QAandFreeFreight, true);
 	    jsClick(homePage.QAandFreeFreight);
 	    verifypageURL("/quantity-truckload");
 	}

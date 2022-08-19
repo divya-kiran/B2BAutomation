@@ -16,10 +16,8 @@ When User navigates to PDP page of product "CSL24UL"
 Then Verify become a partner link in PDP page
 And Scroll to bottom for sticky navigation
 Then user verifies Become a partner link in sticky navigation of PDP page
-When User navigates to PDP page of product "8500W"
+When User navigates to PDP page of product "8500"
 Then User scroll down for sticky navigation
-And User clicks on whats included in sticky navigation
-And verifies web elements in whats included section
 And User clicks on description in sticky navigation
 And verifies web elements in description section
 And User clicks on specs and warranty in sticky navigation

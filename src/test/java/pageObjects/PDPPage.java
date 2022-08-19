@@ -14,8 +14,14 @@ public class PDPPage extends BaseClass{
 	WebDriver driver;
 	WebDriverWait wait;
 	
+	@FindBy(how = How.ID, using = "addGroupToCartButton")
+	public WebElement HeadandRailsAddToCartCTA;
+	
 	@FindBy(how = How.ID, using = "addToCartButton")
 	public WebElement ProductAddToCartCTA;
+	
+	@FindBy(how = How.XPATH, using = "//input[@class='p3-subsection-row-box__row-count js-qty']")
+	public WebElement AddRails;
 	
 	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Add to cart')]")
 	public WebElement ProductAddToCartCTAXPATH;
@@ -77,6 +83,21 @@ public class PDPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Included')]")
 	public WebElement IncludedHeading;
 	
+	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Incentives Program')]")
+	public WebElement IncentivesHeading;
+	
+	@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Connect to MyQ + Key Program')]")
+	public WebElement MyQHeading;
+	
+	@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Residential Operator Quantity Incentive Program')]")
+	public WebElement QuantityIncentiveHeading;
+	
+	@FindBy(how = How.ID, using = "linkToCLP")
+	public WebElement LearnMoreCTA;
+	
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Add more units >')]")
+	public WebElement AddMoreCTA;
+	
 	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Description')]")
 	public WebElement DescHeading;
 	
@@ -112,6 +133,9 @@ public class PDPPage extends BaseClass{
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Description')]")
 	public WebElement Descriptionlink;
+	
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Incentives Program')]")
+	public WebElement Incentivelink;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Specs')]")
 	public WebElement specsandwarrlink;
@@ -191,17 +215,29 @@ public class PDPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Voltage, phase & frequency')]")
 	public WebElement TVoltagePhaseLabel;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@id='T-VOLTAGE-PHASE-FREQUENCY']//label)[3]")
+	@FindBy(how = How.XPATH, using = "(//div[@id='T-VOLTAGE-PHASE-FREQUENCY']//label)[1]")
 	public WebElement TVoltagePhaseLabel3;
 	
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Horse Power')]")
 	public WebElement THorsePowerLabel;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@id='T-HP']//label)[3]")
+	@FindBy(how = How.XPATH, using = "(//div[@id='T-HP']//label)[1]")
 	public WebElement THorsePowerLabel3;
 	
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Special Modification')]")
 	public WebElement SpecialModificationLabel;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='modifications1']/div/div")
+	public WebElement Modification1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='modifications1']/div/ul/li[1]")
+	public WebElement Option1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='modifications2']/div/div")
+	public WebElement Modification2;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='modifications2']/div/ul/li/label")
+	public WebElement Modification2Option1;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@id='T-SPECIAL']//label)[1]")
 	public WebElement DAMPENVButton;
@@ -281,7 +317,7 @@ public class PDPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//div[@data-dropdown='SAFETY_DEVICE_EYE_EDGE']//ul//li)[1]")
 	public WebElement CDOSafetyDeiceDDVal1;
 	
-	@FindBy(how = How.XPATH, using = "//button[contains(text(),'NO')]")
+	@FindBy(how = How.XPATH, using = "//*[@id='addToCartLayer']/div[2]/a")
 	public WebElement CDOPopUPNOButton;
 	
 	@FindBy(how = How.ID, using = "saveToTemplateButton")
@@ -308,7 +344,7 @@ public class PDPPage extends BaseClass{
 	@FindBy(how = How.ID, using = "dialog-body__save-templateSave")
 	public WebElement SaveTemplateSaveButton;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Template Saved')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Template Saved')]")
 	public WebElement TemplateToastMsg;
 	
 	public PDPPage(WebDriver driver) {

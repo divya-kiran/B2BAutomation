@@ -53,6 +53,6 @@ public class ATC067CDOPDPSaveTemplate extends BaseClass {
 			e.printStackTrace();
 			Assert.assertTrue("Element Not Found" + driver.findElement(By.xpath("//h3[contains(text(),'"+MyTemplateName+"')]//parent::div//div[@class='p3-templates__template-head']//button")) + "| Error - " + e,false);
 		} 
-		isElementDisplayed("//p[contains(text(),'Template(s):')]", true);
+		isElementDisplayed("//div[contains(text(),'Template(s):')]", true);
 	}
 }

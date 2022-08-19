@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
@@ -18,10 +19,17 @@ import pageObjects.StickyHeaderPage;
 public class ATC093GuestUserPDPandPLPvalidation extends BaseClass {
 	GuestUserPages guestUserPage= PageFactory.initElements(driver, GuestUserPages.class);
 	ProfilePage profilePage = PageFactory.initElements(driver, ProfilePage.class);
+	HomePage homepage = PageFactory.initElements(driver, HomePage.class);
 	
 	@Then("^verifies become a partner link in PLP page$")
 	public void verifies_become_a_partner_link_in_PLP_page() throws Throwable {
-	    isElementDisplayed(guestUserPage.BecomeApartnerLinkPLP, true);
+     if(!driver.findElements(By.id("onetrust-accept-btn-handler")).isEmpty()){
+			
+			click(homepage.acceptCookies);
+		 }else{
+		        
+		 }
+	  //  searchElementCTA("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "div > atomic-result-section-actions > result-product-cta-component", "section > div > div > a.coveo-link-external");
 	}
 
 	@Then("^Verify become a partner link in PDP page$")

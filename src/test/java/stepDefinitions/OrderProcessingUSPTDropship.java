@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,6 +24,11 @@ public class OrderProcessingUSPTDropship extends BaseClass {
 	@Given("^User will navigate to PDP page of product \"([^\"]*)\"$")
 	public void user_will_navigate_to_PDP_page_of_product(String arg1) throws Throwable {
 		driver.navigate().to(pdpurl+arg1);
+	}
+	
+	@And("^Click on CheckoutCTA on Pop Up$")
+	public void Click_on_CheckoutCTA_on_Pop_Up() throws Throwable {
+		jsClick(pdpPage.CDOPopUPNOButton);
 	}
 
 	@Given("^User will Add product to cart from PDP page$")

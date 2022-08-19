@@ -119,7 +119,7 @@ public class ATC047ValidationofWarrantyClaim extends BaseClass {
 		} 
 		isElementDisplayed("//span[contains(text(),'Claim Number:')]", true);
 		isElementDisplayed("//span[contains(text(),'Dealer ID:')]", true);
-		isElementDisplayed("//span[contains(text(),'CHAMBERLAIN GROUP INC')]", true);
+		isElementDisplayed("//span[contains(text(),' THE CHAMBERLAIN GROUP LLC ')]", true);
 		isElementDisplayed("//strong[contains(text(),'Contact Email Address')]", true);
 		try {
 			JavascriptExecutor jse = (JavascriptExecutor) driver;

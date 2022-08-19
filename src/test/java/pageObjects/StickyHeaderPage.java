@@ -32,10 +32,10 @@ public class StickyHeaderPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//img")
 	public WebElement StickyNavImage;
 	
-	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//div[@class='p3-single-sku-pdp__product-short-info-text-wrapper']//h4")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-single-sku-pdp__product-short-info-text-wrapper']/div[1]")
 	public WebElement StickyNavPName;
 	
-	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//div[@class='p3-single-sku-pdp__product-short-info-text-wrapper']//p")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-single-sku-pdp__product-short-info-text-wrapper']/div[2]")
 	public WebElement StickyNavSummary;
 	
 	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//p[contains(text(),'List price')]")
@@ -56,22 +56,22 @@ public class StickyHeaderPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//div[@class='p3-product__notify-me']//button")
 	public WebElement NotifyMEBtn;
 	
-	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//div[@class='pdpCTA']//a")
+	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//button[@id='addToCartButton']")
 	public WebElement CustomCTAbtn;
 		
 	@FindBy(how = How.XPATH, using = "//nav[@id='sticky-navbar']//div[@class='pdpCTA']//a[contains(text(),'Get Support')]")
 	public WebElement GetSupportCTAbtn;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//h2[contains(text(),'Commercial Door Operator Systems')]")
+	@FindBy(how = How.XPATH, using = "//h2[contains(text(),'Commercial Door Operator Systems')]")
 	public WebElement CDOStickyTitle;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//span[contains(text(),'All prices shown are')]")
+	@FindBy(how = How.XPATH, using = "//span[contains(text(),'All prices shown are')]")
 	public WebElement PLPStickyPriceDisc;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//li[contains(text(),'Products')]")
 	public WebElement ProductsTabSticky;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//h2[contains(text(),'Gate Operator Parts')]")
+	@FindBy(how = How.XPATH, using = "//h2[contains(text(),'Gate Operator Parts')]")
 	public WebElement GatePartsStickytitle;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__heading p3-plp__heading-sticky']//p[contains(text(),'You searched for:')]")

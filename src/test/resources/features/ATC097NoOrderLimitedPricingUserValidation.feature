@@ -1,4 +1,4 @@
-@Regression @Medium
+@Regression @Medium @TC097
 Feature: ATC097 Validating No Order Limited Pricing user accessability across the site
 
 Scenario: Validating No Order Limited Pricing user accessability

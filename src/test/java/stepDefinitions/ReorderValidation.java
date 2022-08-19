@@ -43,8 +43,8 @@ public class ReorderValidation extends BaseClass {
 	public void user_clicks_on_on_order_again_and_verifies_cart_page() throws Throwable {
 	    click(orderHistoryDetailsPage.ReorderLink);
 	    verifypageURL("cart");
-	    isElementDisplayed("//a[contains(text(),'041A5507-7C')]", true);
-	    isElementDisplayed("//a[contains(text(),'02-51227')]", true);
+	    isElementDisplayed("//div[contains(text(),'041A5507-7C')]", true);
+	    isElementDisplayed("//div[contains(text(),'02-51227')]", true);
 	}
 	
 	@Then("^User navigates to the order history detail page of recently placed order$")

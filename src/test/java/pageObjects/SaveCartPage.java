@@ -47,10 +47,10 @@ public class SaveCartPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//p[contains(text(),'Modified')])[1]")
 	public WebElement ModifiedDate1;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-page-saved-carts__cart-qty'])[1]//span[contains(text(),'QTY')]")
+	@FindBy(how = How.XPATH, using = "//*[@id='savedCartsForm']/ul/li[1]/div/div[2]/div[2]/span[1]")
 	public WebElement QTY1;
 	
-	@FindBy(how = How.XPATH, using = "(//div[@class='p3-page-saved-carts__cart-qty'])[1]//span[contains(text(),'QTY')]//following-sibling::span")
+	@FindBy(how = How.XPATH, using = "//*[@id='savedCartsForm']/ul/li[1]/div/div[2]/div[2]/span[2]")
 	public WebElement QTYVal1;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-page-saved-carts__cart-qty-and-price'])[1]//span[@class='p3-page-saved-carts__cart-price']")

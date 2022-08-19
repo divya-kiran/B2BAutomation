@@ -10,6 +10,7 @@ import baseClass.BaseClass;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageObjects.HomePage;
+import pageObjects.SearchResultsPage;
 import pageObjects.StickyHeaderPage;
 
 public class ATC091StickyNavigationPartnerPortal extends BaseClass {
@@ -19,33 +20,38 @@ public class ATC091StickyNavigationPartnerPortal extends BaseClass {
 	@Then("^Verifies sticky header in PLP page$")
 	public void verifies_sticky_header_in_PLP_page() throws Throwable {
 	    scrollBottom();
-		isElementDisplayed(stickyPage.CDOStickyTitle, true);
-		isElementDisplayed(stickyPage.PLPStickyPriceDisc, true);
-		isElementDisplayed(stickyPage.ProductsTabSticky, true);
+	    Thread.sleep(3000);
+	    isElementDisplayed(stickyPage.CDOStickyTitle, true);
+	    isElementDisplayed(stickyPage.PLPStickyPriceDisc, true);
+	    searchElementDisplayed("atomic-query-summary[class='hydrated']", "div[part='container']");
+	    searchElementDisplayed("atomic-tab[id='tab-products']", "button[part='tab']");
 	}
 
 	@Then("^Verifies sticky header in Gate Parts PLP page$")
 	public void Verifies_sticky_header_in_Gate_Parts_PLP_page() throws Throwable {
 		scrollBottom();
+		Thread.sleep(3000);
 		isElementDisplayed(stickyPage.GatePartsStickytitle, true);
 		isElementDisplayed(stickyPage.PLPStickyPriceDisc, true);
-		isElementDisplayed(stickyPage.ProductsTabSticky, true);	    
+		searchElementDisplayed("atomic-query-summary[class='hydrated']", "div[part='container']");
+        searchElementDisplayed("atomic-tab[id='tab-products']", "button[part='tab']");
 	}
 	
 	@When("^User search for product \"([^\"]*)\" in PP$")
 	public void user_search_for_product_in_PP(String arg1) throws Throwable {
 	    driver.navigate().to(configFileReader.getApplicationUrl());
-	    sendKeys(homePage.HeaderSearchTextBox, arg1);
-	    homePage.HeaderSearchTextBox.sendKeys(Keys.RETURN);
+	    searchText("CAPXLV");
 	}
 	
 	@Then("^verifies sticky header in search results page$")
 	public void verifies_sticky_header_in_search_results_page() throws Throwable {
 		scrollBottom();
-		isElementDisplayed(stickyPage.SearchString, true);
+		Thread.sleep(3000);
+		searchElementDisplayed("atomic-query-summary[class='hydrated']", "div[part='container']");
 		isElementDisplayed(stickyPage.PLPStickyPriceDisc, true);
-		isElementDisplayed(stickyPage.ProductsTabSticky, true);
-		isElementDisplayed(stickyPage.ResourceTabSticky, true); 
+		searchElementDisplayed("atomic-tab[id='tab-products']", "button[part='tab']");
+		searchElementDisplayed("atomic-tab[id='tab-resources']", "button[part='tab']");
+		
 	}
 
 	@Then("^verifies sticky header in cart page$")

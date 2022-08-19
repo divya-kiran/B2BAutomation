@@ -62,7 +62,7 @@ public class ATC038AddNewShiptToAddressValidation extends BaseClass {
 
 	@Then("^verify save to address button is enabled$")
 	public void verify_save_to_address_button_is_enabled() throws Throwable {
-		
+		Thread.sleep(2000);
 		ScrollToElement(profilePage.addShipToAddButton);
 		profilePage.addShipToAddButton.isEnabled();
 		click(profilePage.addShipToAddButton);
@@ -71,7 +71,7 @@ public class ATC038AddNewShiptToAddressValidation extends BaseClass {
 
 	@Then("^Click on add to ship to addres save button$")
 	public void click_on_add_to_ship_to_addres_save_button() throws Throwable {
-	    
+	    click(profilePage.addShipToAddButton);
 	    
 	}
 

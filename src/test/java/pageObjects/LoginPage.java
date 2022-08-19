@@ -17,6 +17,9 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.NAME, using = "j_username")
 	public WebElement userName;
 	
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Do not show again')]")
+	public WebElement acceptBrowser;
+	
 	@FindBy(how = How.NAME, using = "j_password")
 	public WebElement password;
 	

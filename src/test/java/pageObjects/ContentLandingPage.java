@@ -20,10 +20,10 @@ public class ContentLandingPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(),'Visit the Co-Op Portal')])[1]")
 	public WebElement CoOpLink;
 	
-	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Shop Now')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Shop Now')]")
 	public WebElement ShopNowLink;
 	
-	@FindBy(how = How.XPATH, using = "//button[contains(text(),'LiftMaster Partner Rewards')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'LiftMaster Partner Rewards')]")
 	public WebElement PartnerRewardsLink;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(@class,'forceCommunityThemeLogo')]")

@@ -7,7 +7,7 @@ Given User will log in as US registered Credit card user
 And User verify log in is successful
 And User will clear cart if there are any products present
 Then User will Add products to cart using quick order "041D9042"
-And User will navigate to PDP page of product "p/8360WLB"
+And User will navigate to PDP page of product "p/8500"
 And User will Add product to cart from PDP page
 And User will click on Mini cart flyer
 And User will proceed to cart page from mini cart flyer

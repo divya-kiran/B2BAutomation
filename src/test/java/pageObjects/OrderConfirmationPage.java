@@ -17,7 +17,7 @@ public class OrderConfirmationPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Order Status')]")
 	public WebElement OrderStatusLink;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Thank you! Order')]")
+	@FindBy(how = How.CSS, using = "#globalMessages > section > div > div.p3-toast__message-wrapper > div")
 	public WebElement OrderConfMessageText;
 	
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Merci! Order')]")

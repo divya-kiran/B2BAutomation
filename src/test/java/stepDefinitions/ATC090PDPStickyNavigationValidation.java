@@ -62,6 +62,7 @@ public class ATC090PDPStickyNavigationValidation extends BaseClass {
 
 	@Then("^user verifies GDO products CTA in sticky navigation of PDP page$")
 	public void user_verifies_GDO_products_CTA_in_sticky_navigation_of_PDP_page() throws Throwable {
+		Thread.sleep(2000);
 		isElementDisplayed(stickyPage.StickyNavImage, true);
 	    isElementDisplayed(stickyPage.StickyNavPName, true);
 	    isElementDisplayed(stickyPage.StickyNavSummary, true);

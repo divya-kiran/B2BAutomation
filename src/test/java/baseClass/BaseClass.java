@@ -26,6 +26,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -103,9 +104,9 @@ public class BaseClass {
 		case "CHROME":
 			driver = initChromeDriver(appURL);
 			break;
-		case "FIREFOX":
-			driver = initFirefoxDriver(appURL);
-			break;
+//		case "FIREFOX"
+//			driver = initFirefoxDriver(appURL);
+//			break;
 		case "EDGE":
 			driver = initEDGEDriver(appURL);
 			break;
@@ -143,17 +144,17 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver initFirefoxDriver(String appURL) {
-		System.out.println("Launching Firefox browser..");
-		System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\Browserdriver\\geckodriver.exe");
-		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();  
-		    capabilities.setCapability("marionette",true); 
-		driver = new FirefoxDriver(capabilities);
-		driver.manage().window().maximize();
-		driver.navigate().to(appURL);
-		pageLoadTimeout();
-		return driver;
-	}
+//	public static WebDriver initFirefoxDriver(String appURL) {
+//		System.out.println("Launching Firefox browser..");
+//		System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\Browserdriver\\geckodriver.exe");
+//		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();  
+//		    capabilities.setCapability("marionette",true); 
+//		driver = new FirefoxDriver(capabilities);
+//		driver.manage().window().maximize();
+//		driver.navigate().to(appURL);
+//		pageLoadTimeout();
+//		return driver;
+//	}
 
 	public static WebDriver initEDGEDriver(String appURL) {
 		System.setProperty("webdriver.edge.driver", "src\\test\\resources\\Browserdriver\\msedgedriver.exe");
@@ -371,6 +372,271 @@ public class BaseClass {
 		}
 
 		return actualstatus;
+	}
+	
+	public static void searchTextBoxDisplayed(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchText(String searchString) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = null;
+		    try
+			{
+				 shadowHost = driver.findElement(By.cssSelector("atomic-search-box[class='search-box-item hydrated']"));
+			}
+			catch(Exception e)
+			{
+			}
+		    if(shadowHost != null){	
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector("div > div > input"));
+			shadowContent.click();
+			shadowContent.clear();
+			shadowContent.sendKeys(searchString);
+			shadowContent.sendKeys(Keys.ENTER);
+			}
+		    else{
+		    	WebElement shadowHost1 = driver.findElement(By.cssSelector("atomic-search-box[class='search-box-item hydrated focus-visible']"));
+		    	SearchContext shadowRoot1 = shadowHost1.getShadowRoot();
+				WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector("div > div > input"));
+				shadowContent1.click();
+				shadowContent1.clear();
+				shadowContent1.sendKeys(searchString);
+				shadowContent1.sendKeys(Keys.ENTER);
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		    }
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchClear() throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector("atomic-search-box[class='search-box-item hydrated']"));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector("div > div > input"));
+			shadowContent.clear();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchElementDisplayed(String arg1, String arg2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+			WebElement shadowHost = driver.findElement(By.cssSelector(arg1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(arg2));
+			shadowContent.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchElementCTA(String val1, String val2, String val3, String val4) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+			WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			SearchContext shadowRoot1 = shadowContent.getShadowRoot();
+			WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector(val3));
+			SearchContext shadowRoot2 = shadowContent1.getShadowRoot();
+			WebElement shadowContent2 = shadowRoot2.findElement(By.cssSelector(val4));
+			shadowContent2.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchElementCTAClick(String val1, String val2, String val3, String val4) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+			WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			SearchContext shadowRoot1 = shadowContent.getShadowRoot();
+			WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector(val3));
+			SearchContext shadowRoot2 = shadowContent1.getShadowRoot();
+			WebElement shadowContent2 = shadowRoot2.findElement(By.cssSelector(val4));
+			explicitWaitVisible(shadowContent2);
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", shadowContent2);
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchProductTab(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchResourceTab(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchClick(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.click();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchFacet(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchFacetPLP(String val1, String val2, String val3) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			SearchContext shadowRoot1 = shadowContent.getShadowRoot();
+			WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector(val3));
+			shadowContent1.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchProductStickyNav(String val1, String val2, String val3) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			SearchContext shadowRoot1 = shadowContent.getShadowRoot();
+			WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector(val3));
+			shadowContent1.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchBecomePartnerLink(String val1, String val2, String val3) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			SearchContext shadowRoot1 = shadowContent.getShadowRoot();
+			WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector(val3));
+			shadowContent1.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	public static void searchFacetClick(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.click();;
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchProductCard(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchProductCardClick(String val1, String val2) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			shadowContent.click();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
+	}
+	
+	public static void searchProductCardDetails(String val1, String val2, String val3) throws ClassNotFoundException, SQLException, IOException {
+		try {			
+		    WebElement shadowHost = driver.findElement(By.cssSelector(val1));
+			SearchContext shadowRoot = shadowHost.getShadowRoot();
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector(val2));
+			SearchContext shadowRoot1 = shadowContent.getShadowRoot();
+			WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector(val3));
+			shadowContent1.isDisplayed();
+			pageLoadTimeout();
+		} catch (Exception e) {
+			Assert.assertTrue("Search Element Not Found" + "| Error - " + e,false);
+			//Reporter.log("Element Not Found" + element + "| Error - " + e);
+		} 
 	}
 	
 	public boolean isElementEnabled(WebElement element, boolean expected) throws Throwable

@@ -200,7 +200,7 @@ public class RGAPage extends BaseClass{
 	@FindBy(how = How.ID, using = "returnedGoodsAuthorizationFormSubmit")
 	public WebElement RGASubmit;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),' Your Return Goods Authorization (RGA) has been submitted.')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),' Your Return Goods Authorization (RGA) has been submitted.')]")
 	public WebElement ToastMsgRGA;
 	
 	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Next Steps')]")

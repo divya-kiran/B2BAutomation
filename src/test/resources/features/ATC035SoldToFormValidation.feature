@@ -7,7 +7,6 @@ Given User will log in as US registered Payment Term user
 And User verify log in is successful
 Given User navigate to myaccount page
 Then user verifies all fields of sold to account form
-And User verifies required labels for sold to account
 
 Scenario: Submitting form and email validation
 

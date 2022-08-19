@@ -1,4 +1,4 @@
-@Regression @High @EmailValidation
+@Regression @High @EmailValidation @TC027 @TestWed
 Feature: ATC027 Validating order confirmation email for US registered Payment terms user
 
 Scenario: Validating order confirmation email for US registered Payment terms user  

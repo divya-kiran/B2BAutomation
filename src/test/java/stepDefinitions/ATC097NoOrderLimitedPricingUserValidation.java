@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
@@ -30,11 +31,21 @@ public class ATC097NoOrderLimitedPricingUserValidation extends BaseClass {
 	@Then("^User will navigate to PLP page and verify Add to cart is disabled$")
 	public void user_will_navigate_to_PLP_page_and_verify_Add_to_cart_is_disabled() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"c/12");
-		ScrollToElement(plpPage.PLPproductimage);
-		isElementDisplayed(plpPage.PLPproductimage, true);
-	    isElementDisplayed(plpPage.PLPproductName, true);
-	    isElementDisplayed(plpPage.PLPproductSumm, true);
-	    isElementDisplayed(plpPage.PLPproductprice, true);
+//		ScrollToElement(plpPage.PLPproductimage);
+//		isElementDisplayed(plpPage.PLPproductimage, true);
+//	    isElementDisplayed(plpPage.PLPproductName, true);
+//	    isElementDisplayed(plpPage.PLPproductSumm, true);
+//	    isElementDisplayed(plpPage.PLPproductprice, true);
+		WebElement AcceptCookies  = driver.findElement(By.id("onetrust-accept-btn-handler"));
+		if (AcceptCookies != null)
+		{
+			AcceptCookies.click();
+		}
+		Thread.sleep(3000);
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-field-condition[class='field hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title-metadata[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-actions[class='hydrated']");
 	}
 
 	@Then("^User will navigate to PDP page and verify add to cart is disabled$")

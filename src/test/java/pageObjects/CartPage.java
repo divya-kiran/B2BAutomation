@@ -140,28 +140,28 @@ public class CartPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//button[contains(@name,'updateCart')])[1]")
 	public WebElement UpdateCart1;
 	
-	@FindBy(how = How.XPATH, using = "(//h4[contains(text(),'Included')])[1]")
+	@FindBy(how = How.XPATH, using = "(//h3[contains(text(),'Included')])[1]")
 	public WebElement CDOProductIncluded1;
 	
-	@FindBy(how = How.XPATH, using = "(//h4[contains(text(),'Included')])[2]")
+	@FindBy(how = How.XPATH, using = "(//h3[contains(text(),'Included')])[1]")
 	public WebElement CDOProductIncluded2;
 	
 	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[1]")
 	public WebElement CDOProductParentSubComponent;
 	
-	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[2]")
+	@FindBy(how = How.XPATH, using = "//*[@id='updateCartForm']/section/main/div[2]/div/div/ul/li[1]/div/div[2]/a")
 	public WebElement CDOProductChildSubComponent;
 	
-	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[1]//li[1]//a")
+	@FindBy(how = How.XPATH, using = "//*[@id='updateCartForm']/section/main/div[2]/div/div/ul/li[2]/ul/li[2]/div/span[1]/b/a")
 	public WebElement ParentSubcomp1Link;
 	
-	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[1]//li[2]//a")
+	@FindBy(how = How.XPATH, using = "//*[@id='updateCartForm']/section/main/div[2]/div/div/ul/li[2]/ul/li[3]/div/span[1]")
 	public WebElement ParentSubcomp2Link;
 	
-	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[1]//li[1]//p")
+	@FindBy(how = How.XPATH, using = "//*[@id='updateCartForm']/section/main/div[2]/div/div/ul/li[2]/ul/li[2]/p")
 	public WebElement ParentSubcomp1Summ;
 	
-	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[1]//li[2]//p")
+	@FindBy(how = How.XPATH, using = "//*[@id='updateCartForm']/section/main/div[2]/div/div/ul/li[2]/ul/li[3]/p")
 	public WebElement ParentSubcomp2Summ;
 	
 	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[1]//li[1]//div[@class='p3-product__subcomponent-quantity']")
@@ -170,7 +170,7 @@ public class CartPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[1]//li[2]//div[@class='p3-product__subcomponent-quantity']")
 	public WebElement ParentSubcomp2QTY;
 	
-	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[2]//li[1]//a")
+	@FindBy(how = How.XPATH, using = "//*[@id='updateCartForm']/section/main/div[2]/div/div/ul/li[1]/ul/li[2]/div/span[1]")
 	public WebElement ChildSubcomp1Link;
 	
 	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[2]//li[2]//a")
@@ -188,10 +188,10 @@ public class CartPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//ul[@class='p3-product__subcomponents'])[2]//li[2]//div[@class='p3-product__subcomponent-quantity']")
 	public WebElement ChildSubcomp2QTY;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Cart saved. Go to')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Cart saved. Go to')]")
 	public WebElement SavedCartToastMsg;
 	
-	@FindBy(how = How.XPATH, using = "//p[@class='p3-toast__message']//a[contains(text(),'Saved Carts')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-toast__message']//a[contains(text(),'Saved Carts')]")
 	public WebElement SavedCartLinkToastMsg;
 	
 	public CartPage(WebDriver driver) {

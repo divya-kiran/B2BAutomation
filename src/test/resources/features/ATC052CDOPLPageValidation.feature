@@ -1,4 +1,4 @@
-@Regression @High @PLP
+@Regression @High @PLP @TC052
 Feature: ATC052 Validation of CDO PLP page
 
 Scenario: Verification of CDO PLP Page

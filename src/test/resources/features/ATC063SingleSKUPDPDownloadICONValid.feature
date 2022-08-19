@@ -5,6 +5,6 @@ Scenario: Verification of download icon of single sku PDP Page
 
 Given User will log in as US registered Payment Term user
 And User verify log in is successful
-When User navigates to PDP page of product "8500W"
+When User navigates to PDP page of product "8500"
 Then User clicks on download icon
 And user verifies elements in download pop up section

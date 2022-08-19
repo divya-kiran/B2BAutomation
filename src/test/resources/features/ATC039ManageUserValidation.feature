@@ -1,9 +1,9 @@
-@Regression @High @MyAccount
+@Regression @High @MyAccount @TC039
 Feature: ATC039 Manage user Form Validation
 
 Scenario: Verifying web elements of Manage user Account card
 
-Given User will log in as US registered Payment Term user
+Given User will log in as US registered user
 And User verify log in is successful
 Given User navigate to myaccount page
 And User scrolls to Manage user section and verify header elements

@@ -91,6 +91,6 @@ public class ATC072SavedCartValidation extends BaseClass {
 		pageLoadTimeout();
 		jsClick(savecartPage.SavedCartToggleButton1);
 		jsClick(savecartPage.DeleteButton1);
-		isElementDisplayed("//p[contains(text(),'Cart named')]", true);
+		isElementDisplayed("//div[contains(text(),'Cart named')]", true);
 	}
 }

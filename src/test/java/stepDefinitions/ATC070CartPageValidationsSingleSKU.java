@@ -145,6 +145,6 @@ public class ATC070CartPageValidationsSingleSKU extends BaseClass {
 	@Then("^delete first product$")
 	public void delete_first_product() throws Throwable {
 		jsClick(cartPage.CartPageProductDelIcon1);
-		isElementDisplayed("//p[contains(.,'has been removed from your cart')]", true);
+		isElementDisplayed("//div[contains(.,' has been removed from your cart. ')]", true);
 	}
 }

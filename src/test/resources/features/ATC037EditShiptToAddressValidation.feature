@@ -1,4 +1,4 @@
-@Regression @High @MyAccount
+@Regression @High @MyAccount @TC037
 Feature: ATC037 Edit ship to address validation in my account page
 
 Scenario: Verifying web elements in Edit Ship To form

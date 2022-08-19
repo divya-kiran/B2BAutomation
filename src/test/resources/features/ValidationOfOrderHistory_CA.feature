@@ -12,7 +12,6 @@ And Verfies order history heading
 And verifies PO number search box
 And Verifies order total count
 And verifies sorting toggle button
-And verifies show more link in order history page
 And Verify Order card elements
 
 Scenario: Validation of Filter option in order history page

@@ -1,9 +1,9 @@
-@Regression @High @MyAccount
+@Regression @High @MyAccount @TC40
 Feature: ATC040 Invite user Form Validation
 
 Scenario: Verifying web elements of Invite user Account card
 
-Given User will log in as US registered Payment Term user
+Given User will log in as US registered user
 And User verify log in is successful
 Given User navigate to myaccount page
 Then User scrolls to Invite user section and verify header elements

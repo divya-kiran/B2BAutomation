@@ -14,16 +14,16 @@ public class ProfilePage extends BaseClass{
 	WebDriver driver;
 	WebDriverWait wait;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Name & contact information saved')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Name & contact information saved')]")
 	public WebElement ToastMsgNameandContact;
 
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Password Updated')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Password Updated')]")
 	public WebElement ToastMsgPassword;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(.,'Name is too long')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(.,'Name is too long')]")
 	public WebElement ToastMsgLongName;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(.,'Invalid phone number')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(.,'Invalid phone number')]")
 	public WebElement ToastMsgPriPhoneNum;
 	
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Sold-To information submitted to Liftmaster for approval.')]")
@@ -32,7 +32,7 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//p[text()='Ship-To information submitted to Liftmaster for approval.']")
 	public WebElement ToastMsgEditShipToAccount;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Invitation Sent')]")
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Invitation Sent')]")
 	public WebElement ToastMsgInvitation;
 	
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Invalid phone number')]")

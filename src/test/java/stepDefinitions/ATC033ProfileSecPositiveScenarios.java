@@ -37,6 +37,7 @@ public class ATC033ProfileSecPositiveScenarios extends BaseClass {
 	    isElementDisplayed(profilePage.PrimaryPhoneLabel, true);
 	    isElementDisplayed(profilePage.PrimaryPhoneTB, true);
 	    isElementDisplayed(profilePage.SecondaryPhoneTB, true);
+	    click(profilePage.PositionDD1);
 	}
 
 	@Given("^user verifies profile Section Update Password web elements$")
@@ -78,6 +79,8 @@ public class ATC033ProfileSecPositiveScenarios extends BaseClass {
 	    sendKeys(profilePage.PrimaryPhoneTB, Integer.toString(number)+"0");
 	    sendKeys(profilePage.FirstNameAndLastNameTextBox, "AutomationUser USPT");
 		click(profilePage.NameandContactHeading);
+		click(profilePage.PositionDD);
+		click(profilePage.PositionDD1);
 	}
 
 	@Then("^Verify save button is enabled$")

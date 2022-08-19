@@ -11,6 +11,7 @@ And User will Add product to cart from PDP page
 And User will navigate to PDP page of product "p/BH505L5R3"
 And User will select options from install step in CDO PDP page
 And User will Add product to cart from CDO PDP page
+And Click on CheckoutCTA on Pop Up
 And User will navigate to homepage
 And User will click on Mini cart flyer
 And User will proceed to cart page from mini cart flyer

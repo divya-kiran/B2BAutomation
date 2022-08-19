@@ -9,7 +9,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.7.1</version>
+			<version>4.1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -60,6 +60,18 @@
 			<artifactId>extentreports</artifactId>
 			<version>3.1.2</version>
 		</dependency>
+		       <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.25</version>
+                <scope>test</scope>
+               </dependency>
+
+       <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>1.7.25</version>
+       </dependency>
 		<!-- <dependency> <groupId>info.cukes</groupId> <artifactId>cucumber-testng</artifactId> 
 			<version>1.2.5</version> <scope>compile</scope> <exclusions> <exclusion> 
 			<groupId>junit</groupId> <artifactId>junit</artifactId> </exclusion> </exclusions> 
@@ -80,7 +92,7 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>28.0-jre</version>
+			<version>31.0.1-jre</version>
 		</dependency>
 		
 

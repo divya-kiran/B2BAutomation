@@ -23,7 +23,7 @@ public class PLPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h2[contains(text(),'Garage Door Opener Systems')]")
 	public WebElement GDOTitle;
 	
-	@FindBy(how = How.XPATH, using = "//div[contains(@class,'p3-plp__heading')]//span[contains(text(),'All prices shown are')]//parent::li")
+	@FindBy(how = How.XPATH, using = "//span[contains(text(),'All prices shown are')]")
 	public WebElement PriceDisclaimerPLP;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='p3-plp__tabs']//button[contains(text(),'Remove')]")

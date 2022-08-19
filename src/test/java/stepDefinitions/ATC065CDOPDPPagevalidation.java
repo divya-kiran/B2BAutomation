@@ -45,6 +45,11 @@ public class ATC065CDOPDPPagevalidation extends BaseClass {
 	    isElementDisplayed(pdpPage.SpecialModificationLabel, true);
 	    jsClick(pdpPage.DAMPENVButton);
 	    Thread.sleep(2000);
+	    jsClick(pdpPage.Modification1);
+	    jsClick(pdpPage.Option1);
+	    Thread.sleep(2000);
+	    jsClick(pdpPage.Modification2);
+	    jsClick(pdpPage.Modification2Option1);
 	}
 
 	@Then("^User verifies elements in install section of CDO PDP Page$")

@@ -1,4 +1,4 @@
-@Regression @Medium @MyAccount
+@Regression @Medium @MyAccount @TC036
 Feature: ATC036 Validation of communication preferences
 
 Scenario: Verifying web elements of communication preferences link
