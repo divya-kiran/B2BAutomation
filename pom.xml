@@ -98,7 +98,7 @@
 
 	</dependencies>
 		<properties>
-		<envname>UAT</envname>
+		<envname>QA2</envname>
 		<browsername>CHROME</browsername>
 		</properties>
 	
