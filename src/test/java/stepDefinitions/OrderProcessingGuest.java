@@ -15,6 +15,6 @@ public class OrderProcessingGuest extends BaseClass {
 	@Then("^User will fill details in review order section for guest$")
 	public void i_will_fill_details_in_review_order_section_for_guest() throws Throwable {
 	    sendKeys(checkoutPage.ReviewDetailsAttentionOfTextBox, "Automation User");
-	    sendKeys(checkoutPage.ReviewDetailsNotesTextBox, "Automation user placing an order");
+	    sendKeys(checkoutPage.ReviewDetailsJobNameTextBox, "Automation user placing an order");
 	}
 }

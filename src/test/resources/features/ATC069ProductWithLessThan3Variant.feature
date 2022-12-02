@@ -1,4 +1,4 @@
-@Regression @High
+@Regression @High @TC069
 Feature: ATC069 Validation of PDP page with product having less than 3 variants
 
 Scenario: Validation of PDP page with product having less than 3 variants

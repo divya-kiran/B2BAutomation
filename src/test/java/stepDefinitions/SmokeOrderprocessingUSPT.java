@@ -87,7 +87,7 @@ public class SmokeOrderprocessingUSPT extends BaseClass {
 	public void user_will_log_in_as_CA_registered_Credit_card_user() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"logout");
 		pageLoadTimeout();
-	   sendKeys(loginpage.userName, "automationusercacc@mailinator.com");
+	   sendKeys(loginpage.userName, "automationcacc@mailinator.com");
 	   sendKeys(loginpage.password, "Test@123");
 	   click(loginpage.PartnerAccountSignInHeader);
 	   jsClick(loginpage.signinButton);
@@ -219,7 +219,7 @@ public class SmokeOrderprocessingUSPT extends BaseClass {
 		isElementDisplayed(checkoutPage.ReviewDetailsAttentionOfTextBox, true);
 		sendKeys(checkoutPage.ReviewDetailsAttentionOfTextBox, "Automation User");
 	    sendKeys(checkoutPage.ReviewDetailsPONumberTextBox, "Automation Test Number");
-	    sendKeys(checkoutPage.ReviewDetailsNotesTextBox, "Automation user placing an order");
+	    sendKeys(checkoutPage.ReviewDetailsJobNameTextBox, "Automation user placing an order");
 	    Thread.sleep(2000);
 	}
 

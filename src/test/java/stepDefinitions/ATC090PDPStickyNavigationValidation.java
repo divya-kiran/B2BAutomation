@@ -57,7 +57,7 @@ public class ATC090PDPStickyNavigationValidation extends BaseClass {
 	    isElementDisplayed(stickyPage.PriceVal, true);
 	    isElementDisplayed(stickyPage.QTYBox, true);
 	    isElementDisplayed(stickyPage.StickyNavAddToCartBtn, true);
-	    isElementdisabled(stickyPage.StickyNavAddToCartBtn, false);
+	    //isElementdisabled(stickyPage.StickyNavAddToCartBtn, false);
 	}
 
 	@Then("^user verifies GDO products CTA in sticky navigation of PDP page$")

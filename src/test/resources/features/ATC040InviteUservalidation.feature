@@ -1,4 +1,4 @@
-@Regression @High @MyAccount @TC40
+@Regression @High @MyAccount @TC040
 Feature: ATC040 Invite user Form Validation
 
 Scenario: Verifying web elements of Invite user Account card

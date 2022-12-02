@@ -1,4 +1,4 @@
-@Regression @High @Templates
+@Regression @High @Templates @TC068
 Feature: ATC068 Validation of My templates page
 
 Scenario: Validation of my templates page

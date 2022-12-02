@@ -89,7 +89,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//strong[contains(text(),'I don')]")
 	public WebElement IdontKnowbtn;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'My company doesn') and contains(text(),'t have a LiftMaster Partner Account')]")
+	@FindBy(how = How.XPATH, using = "//li[@class = 'p3-registration-splash__item']//a[strong = 'Create Guest Account']")
 	public WebElement GuestRegBtn;
 	
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Partner Account Sign up')]")
@@ -173,7 +173,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Guest Registration')]//following-sibling::span[contains(text(),'* Required')]")
 	public WebElement GuestRegReqLabel;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Please fill in the information below to register for the LiftMaster Partner Portal')]")
+	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Please fill in the information below to register for the LiftMaster Partner Portal')]")
 	public WebElement GuestRegLabel;
 	
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'m interested in becoming a LiftMaster partner. Please check this box if you') and contains(text(),'d like our Sales team to reach out to you')]")

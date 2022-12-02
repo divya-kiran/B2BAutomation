@@ -115,7 +115,7 @@ public class ATC101ValidationOfSpanishSite extends BaseClass {
 	    isElementDisplayed(checkoutPage.frReviewDetailsAttentionOfTextBox, true);
 		sendKeys(checkoutPage.frReviewDetailsAttentionOfTextBox, "Automation User");
 	    sendKeys(checkoutPage.frReviewDetailsPONumberTextBox, "Automation Test Number");
-	    sendKeys(checkoutPage.ReviewDetailsNotesTextBox, "Automation user placing an order");	    
+	    sendKeys(checkoutPage.ReviewDetailsJobNameTextBox, "Automation user placing an order");	    
 	}
 
 	@Given("^Place the order in spanish site$")

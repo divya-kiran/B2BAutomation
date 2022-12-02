@@ -18,7 +18,7 @@ public class ATC039ManageUserValidation extends BaseClass {
 	public void user_will_log_in_as_US_registered_user() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"logout");
 		pageLoadTimeout();
-	   sendKeys(loginpage.userName, "ravi.teja@chamberlain.com");
+	   sendKeys(loginpage.userName, "automationuseruspt@mailinator.com");
 	   sendKeys(loginpage.password, "Test@123");
 	   click(loginpage.PartnerAccountSignInHeader);
 	   jsClick(loginpage.signinButton);

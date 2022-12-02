@@ -22,7 +22,7 @@ And verify add drop ship address is not displayed in checkout page
 Scenario: Verification of search text box results for guest user
 
 Given User is on HomePage
-When User enter text into product search box "8500" 
-And Verify page by URL "searchResult#q=8500&tab=products&numberOfResults=30"
+When User enter text into product search box "8500WMC" 
+And Verify page by URL "searchResult#q=8500WMC&tab=products&numberOfResults=30"
 Then Verify Search results page header elements
 And verify products tab is displaying results

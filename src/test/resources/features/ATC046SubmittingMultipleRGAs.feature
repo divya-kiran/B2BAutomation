@@ -1,4 +1,4 @@
-@Regression @Medium @RGA
+@Regression @Medium @RGA @TC046
 Feature: ATC046 RGA page validation with multiple returns
 
 Scenario: Submission of multiple RGAs

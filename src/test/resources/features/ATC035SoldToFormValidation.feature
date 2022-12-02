@@ -10,11 +10,11 @@ Then user verifies all fields of sold to account form
 
 Scenario: Submitting form and email validation
 
-Given User navigate to myaccount page
-Then User fills editable fields in sold to form
-And click on sold to form save button
-And verifies sold to form success toast message
-And navigates to user inbox "automationuseruspt"
-And verifies sold to email receipt and navigate to mail body
-And verifies web elements in email confirmation body for sold to email
+##Given User navigate to myaccount page
+##Then User fills editable fields in sold to form
+##And click on sold to form save button
+##And verifies sold to form success toast message
+##And navigates to user inbox "automationuseruspt"
+##And verifies sold to email receipt and navigate to mail body
+##And verifies web elements in email confirmation body for sold to email
 

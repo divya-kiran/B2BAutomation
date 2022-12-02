@@ -27,8 +27,6 @@ public class ATC087GuestRegistrationPageValidation extends BaseClass {
 		isElementDisplayed(loginPage.GuestRegHeading, true);
 		isElementDisplayed(loginPage.GuestRegReqLabel, true);
 		isElementDisplayed(loginPage.GuestRegLabel, true);
-		isElementDisplayed(loginPage.GuestRegInterestedMsg, true);
-		ScrollToElement(loginPage.GuestRegInterestedMsg);
 	}
 
 	@Then("^user fills all mandatory fields in guest registration page$")

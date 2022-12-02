@@ -11,13 +11,13 @@ Then user navigates to cart page
 And Proceeds to checkoutpage
 And User will select shipping method
 And User will Click on shipping delivery Save button
-And User will enter credit card details for credit card details Card name "Visa" card number "4111111111111111" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserUSCC"
+And User will enter credit card details for credit card details Card name "Visa" card number "4444333322221111" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserUSCC"
 And User will click on payment section save button
 Then User clicks on payment label and get back to payment section
-And User will enter credit card details for credit card details Card name "Amex" card number "341111111111111" Exp Month "Aug" Exp Year"2028" CVV "2341" CardHolder Name "AutomationUser"
+And User will enter credit card details for credit card details Card name "Amex" card number "343434343434343" Exp Month "Aug" Exp Year"2028" CVV "5555" CardHolder Name "AutomationUser"
 And User will click on payment section save button
 Then User clicks on payment label and get back to payment section
-And User will enter credit card details for credit card details Card name "Master-Card" card number "5405980000008303" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserUSCC"
+And User will enter credit card details for credit card details Card name "Master-Card" card number "5555555555554444" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserUSCC"
 And User will click on payment section save button
 Then User clicks on payment label and get back to payment section
 And User will enter credit card details for credit card details Card name "Discover" card number "6011000990139424" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserUSCC"

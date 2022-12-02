@@ -1,4 +1,4 @@
-@Regression @High @RGA @EmailValidation
+@Regression @High @RGA @EmailValidation @TC045
 Feature: ATC045 Return Goods Authorization page validation and email validation
 
 Scenario: Verifying web elements in RGA page

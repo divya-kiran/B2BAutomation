@@ -13,7 +13,7 @@ public class ATC049SearchResultsResourceTabValidation extends BaseClass {
 
 	@Given("^verify header elements in resource tab section$")
 	public void verify_header_elements_in_resource_tab_section() throws Throwable {
-		searchElementDisplayed("atomic-query-summary[class='hydrated']", "div[part='results']");
+		searchElementDisplayed("atomic-query-summary[class='hydrated']", "div[class='text-on-background']");
 	}
 
 	@Then("^User verifies literature type facet section in resource tab$")

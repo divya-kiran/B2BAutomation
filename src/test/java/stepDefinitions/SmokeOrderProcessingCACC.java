@@ -3,6 +3,7 @@ package stepDefinitions;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import pageObjects.CartPage;
@@ -18,7 +19,7 @@ public class SmokeOrderProcessingCACC extends BaseClass {
 	
 	String appurlCart = configFileReader.getApplicationUrl();
 	
-	@Then("^User will enter credit card details for credit card details Card name \"([^\"]*)\" card number \"([^\"]*)\" Exp Month \"([^\"]*)\" Exp Year\"([^\"]*)\" CVV \"([^\"]*)\" CardHolder Name \"([^\"]*)\"$")
+	@And("^User will enter credit card details for credit card details Card name \"([^\"]*)\" card number \"([^\"]*)\" Exp Month \"([^\"]*)\" Exp Year\"([^\"]*)\" CVV \"([^\"]*)\" CardHolder Name \"([^\"]*)\"$")
 	public void i_will_enter_credit_card_details_for_credit_card_details_Card_name_card_number_Exp_Month_Exp_Year_CVV_CardHolder_Nmae(String arg1, String arg2, String arg3, String arg4, String arg5, String arg6) throws Throwable {
 		Thread.sleep(6000);
 		driver.switchTo().frame("xiFrameHosted");
@@ -32,7 +33,7 @@ public class SmokeOrderProcessingCACC extends BaseClass {
 		switchToDefault();
 	}
 	
-	@Then("^User will click on payment section save button$")
+	@And("^User will click on payment section save button$")
 	public void i_will_click_on_payment_section_save_button() throws Throwable {
 		switchToDefault();
 		jsClick(checkoutPage.PaymentSectionSaveButton);

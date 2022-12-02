@@ -1,4 +1,4 @@
-@Regression @High @EmailValidation
+@Regression @High @EmailValidation @TC032
 Feature: ATC032 Validating order confirmation email for CA guest user
 
 Scenario: Validating order confirmation email for CA Guest user  
@@ -16,7 +16,7 @@ Then User Navigates to Checkout page
 And I will select ship to delivery address
 And User will select shipping method
 And User will Click on shipping delivery Save button
-And User will enter credit card details for credit card details Card name "Master-Card" card number "5405980000008303" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserCACC"
+And User will enter credit card details for credit card details Card name "Master-Card" card number "5555555555554444" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserCACC"
 And User will click on payment section save button
 Then User will fill details in review order section for guest
 And click on place order

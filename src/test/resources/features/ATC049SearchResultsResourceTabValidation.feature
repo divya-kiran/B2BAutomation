@@ -1,4 +1,4 @@
-@Regression @High @SearchResult @TC49
+@Regression @High @SearchResult @TC049
 Feature: ATC049 Validation of Resources tab in search results page
 
 Scenario: Verification of web elements in resource tab search results Page
@@ -8,7 +8,7 @@ And User verify log in is successful
 When User enter text into product search box "374ut" 
 Then User click on resources tab
 And verify header elements in resource tab section
-Then User verifies literature type facet section in resource tab
+##Then User verifies literature type facet section in resource tab
 And user verifies Asset type facet section in resource tab
 And user clicks in literature type facet check box and verify resource tab matches with correct number of results
-And User verifies document tab card
+##And User verifies document tab card

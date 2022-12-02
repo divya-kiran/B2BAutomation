@@ -1,4 +1,4 @@
-@Regression @High @PLP
+@Regression @High @PLP @TC054
 Feature: ATC054 Validation of Access Control PLP page
 
 Scenario: Verification of Access Control PLP Page
@@ -7,7 +7,7 @@ Given User will log in as US registered Payment Term user
 And User verify log in is successful
 When User navigates to Access Control PLP page
 Then Verifies header elements in Access Control PLP page
-And Verifies fourth product card and its attributes in Access Control PLP page
+##And Verifies fourth product card and its attributes in Access Control PLP page
 And user verifies product card click on PLP is navigating to PDP page by link
 
 Scenario: Verification of facets in Access Control PLP Page

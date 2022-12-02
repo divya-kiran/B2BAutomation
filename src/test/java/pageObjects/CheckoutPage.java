@@ -47,8 +47,8 @@ public class CheckoutPage extends BaseClass{
 	@FindBy(how = How.ID, using = "checkoutPlaceOrder")
 	public WebElement CheckoutStickyPlaceOrderButton;
 	
-	@FindBy(how = How.NAME, using = "Notes")
-	public WebElement ReviewDetailsNotesTextBox;
+	@FindBy(how = How.NAME, using = "JobName")
+	public WebElement ReviewDetailsJobNameTextBox;
 	
 	@FindBy(how = How.XPATH, using = "//input[contains(@placeholder,'PO Number')]")
 	public WebElement ReviewDetailsPONumberTextBox;

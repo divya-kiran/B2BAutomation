@@ -26,7 +26,7 @@ public class ATC082ValidationofResourcesTab extends BaseClass {
 		elementHover(homePage.ResourcesTab);
 		Thread.sleep(1000);
 		isElementDisplayed(homePage.TechnicalTab, true);
-	    isElementDisplayed(homePage.ResourcesPartnerSupportLink, true);
+	    isElementDisplayed(homePage.ProductandServiceLink, true);
 	    isElementDisplayed(homePage.MasterCodeResetUtitlityLink, true);
 	}
 

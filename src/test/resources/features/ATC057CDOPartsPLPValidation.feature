@@ -1,4 +1,4 @@
-@Regression @High @PLP
+@Regression @High @PLP @TC057
 Feature: ATC057 Validation of CDO Parts PLP page
 
 Scenario: Verification of CDO Parts PLP Page
@@ -7,7 +7,7 @@ Given User will log in as US registered Payment Term user
 And User verify log in is successful
 When User navigates to CDO Parts PLP page
 Then Verifies header elements in CDO Parts PLP page
-And Verifies fourth product card and its attributes in CDO Parts PLP page
+##And Verifies fourth product card and its attributes in CDO Parts PLP page
 And user verifies product card click on PLP is navigating to PDP page by link
 
 Scenario: Verification of facets in CDO Parts PLP Page

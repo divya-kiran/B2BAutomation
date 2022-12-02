@@ -36,10 +36,10 @@ public class ATC054AccessControlSystemsPLP extends BaseClass {
 		        
 		 }
 		Thread.sleep(3000);
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-field-condition[class='field hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title[class='hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title-metadata[class='hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-actions[class='hydrated']");     
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-field-condition[class='field hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-title[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-title-metadata[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-actions[class='hydrated']");     
 	}
 
 	@Then("^User verifies category facet section in Access Control PLP page$")
@@ -61,7 +61,7 @@ public class ATC054AccessControlSystemsPLP extends BaseClass {
 
 	@Then("^user clicks on Access Control category facet section and verify correct resultset by count$")
 	public void user_clicks_on_Access_Control_category_facet_section_and_verify_correct_resultset_by_count() throws Throwable {
-		searchFacetClick("atomic-category-facet[class='hydrated']", "button[part='value-link']");
+		searchFacetClick("atomic-category-facet[class='hydrated']", "button[part='label-button']");
 	}
 }
 

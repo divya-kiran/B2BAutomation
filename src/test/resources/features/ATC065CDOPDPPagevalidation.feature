@@ -1,4 +1,4 @@
-@Regression @High @PDP
+@Regression @High @PDP @TC065
 Feature: ATC065 Validation of CDO PDP page
 
 Scenario: Verification of web elements in CDO PDP Page

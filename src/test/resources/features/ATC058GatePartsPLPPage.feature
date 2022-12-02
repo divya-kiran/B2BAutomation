@@ -1,4 +1,4 @@
-@Regression @High @PLP
+@Regression @High @PLP @TC058
 Feature: ATC058 Validation of Gate Parts PLP page
 
 Scenario: Verification of Gate Parts PLP Page
@@ -7,7 +7,7 @@ Given User will log in as US registered Payment Term user
 And User verify log in is successful
 When User navigates to Gate Parts PLP page
 Then Verifies header elements in Gate Parts PLP page
-And Verifies fourth product card and its attributes in Gate Parts PLP page
+##And Verifies fourth product card and its attributes in Gate Parts PLP page
 And user verifies product card click on PLP is navigating to PDP page by link
 
 Scenario: Verification of facets in Gate Parts PLP Page

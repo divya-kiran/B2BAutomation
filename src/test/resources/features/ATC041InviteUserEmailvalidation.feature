@@ -1,4 +1,4 @@
-@Regression @Medium @MyAccount
+@Regression @Medium @MyAccount @TC041
 Feature: ATC041 Invite user Email Validation
 
 Scenario: Invitation email validation

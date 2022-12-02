@@ -89,7 +89,7 @@ public class ATC048SearchresultsProductTabValidation extends BaseClass {
 
 	@Then("^user verifies the first product card resulted in search$")
 	public void user_verifies_the_first_product_card_resulted_in_search() throws Throwable {
-	    searchProductCard("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result");
+	    searchProductCard("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a");
 	}
 
 	@Then("^User verifies product name summary price image qty box and CTA for the resultant CDO product$")
@@ -99,10 +99,10 @@ public class ATC048SearchresultsProductTabValidation extends BaseClass {
 //		isElementDisplayed(searchResultsPage.FirstProdSummary, true);
 //		isElementDisplayed(searchResultsPage.FirstProdPrice, true);
 //		isElementDisplayed("(//div[@class='p3-plp__tabs-content']//li[@class='p3-plp__product-item'])[1]//a", true);
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-field-condition[class='field hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title[class='hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title-metadata[class='hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-actions[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-field-condition[class='field hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-title[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-title-metadata[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-actions[class='hydrated']");
 	}
 
 	@Then("^user verifies first product is redirected to PDP page$")
@@ -110,7 +110,7 @@ public class ATC048SearchresultsProductTabValidation extends BaseClass {
 //		isElementDisplayed(searchResultsPage.FirstProduct, true);
 //		jsClick(searchResultsPage.FirstProduct);
 //		verifypageURL("p/GT");
-		searchProductCardClick("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result");
+		searchProductCardClick("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a");
 	}
 
 	@Then("^user verifies product name summary price image qty box and CTA for the resultant single sku product$")

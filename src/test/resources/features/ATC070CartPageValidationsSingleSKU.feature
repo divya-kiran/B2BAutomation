@@ -6,10 +6,14 @@ Scenario: Validation of Cart Page web elements for a single product
 Given User will log in as US registered Payment Term user
 And User verify log in is successful
 And User will clear cart if there are any products present
-Then user add Products to cart "p/02-51227" "p/041A5507-7C"
-Given user navigates to cart page
+And User will navigate to PDP page of product "p/041-0031"
+And User will Add product to cart from PDP page
+And User will click on Mini cart flyer
+And User will proceed to cart page from mini cart flyer
+##Then user add Products to cart "p/041A5507-7C"
+##Given user navigates to cart page
 And verify all web elements related to single SKU product in cart page
-And Verifies total price of all the products
+##And Verifies total price of all the products
 And click on continue shopping in cart page
 
 Scenario: Validation of Cart Page save cart and Job name for a single product
@@ -31,5 +35,5 @@ Scenario: Validation of Cart Page product navigation
 Given user navigates to cart page
 And Click on product and verify user navigated to PDP page
 Then user navigates to cart page
-And delete first product
-And click on checkout button and verify user navigated to Checkout page
+##And delete first product
+##And click on checkout button and verify user navigated to Checkout page

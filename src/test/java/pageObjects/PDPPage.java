@@ -140,7 +140,7 @@ public class PDPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Specs')]")
 	public WebElement specsandwarrlink;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Resources')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-single-sku-pdp__nav-wrapper']//a[contains(text(),'Resources')]")
 	public WebElement Resourceslink;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'You May Also Like')]")
@@ -203,7 +203,7 @@ public class PDPPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//div[@data-group-dropdown='template']//div)[2]")
 	public WebElement TemplatesDD;
 	
-	@FindBy(how = How.XPATH, using = "//div[@data-group-dropdown='template']//h4[contains(text(),'Liftmaster Templates')]")
+	@FindBy(how = How.XPATH, using = "//div[@data-group-dropdown='template']//h4[contains(text(),'My Templates')]")
 	public WebElement LMTemplatesHeading;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@data-group-dropdown='template']//li)[2]")

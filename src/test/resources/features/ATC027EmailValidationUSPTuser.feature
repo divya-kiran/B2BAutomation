@@ -6,7 +6,7 @@ Scenario: Validating order confirmation email for US registered Payment terms us
 Given User will log in as US registered Payment Term user
 And User verify log in is successful
 And User will clear cart if there are any products present
-And User will navigate to PDP page of product "p/02-51227"
+And User will navigate to PDP page of product "p/041-0031"
 And User will Add product to cart from PDP page
 And User will click on Mini cart flyer
 And User will proceed to cart page from mini cart flyer

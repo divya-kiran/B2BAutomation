@@ -35,10 +35,10 @@ public class ATC055ProductMenuAccessoriesPLPPage extends BaseClass {
 		        
 		 }
 		Thread.sleep(3000);
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-field-condition[class='field hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title[class='hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-title-metadata[class='hydrated']");
-		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > a:nth-child(31) > atomic-result", "atomic-result-section-actions[class='hydrated']");	    
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-field-condition[class='field hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-title[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-title-metadata[class='hydrated']");
+		searchProductCardDetails("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a", "atomic-result-section-actions[class='hydrated']");	    
 	}
 
 	@Then("^User verifies category facet section in Accessories PLP page$")
@@ -77,7 +77,7 @@ public class ATC055ProductMenuAccessoriesPLPPage extends BaseClass {
 //		if(productcountintsAcces!=productcountlabelAcces){
 //			throw new Exception("Facet count and resultant result count do not match");
 //		}	    
-		searchFacetClick("atomic-category-facet[class='hydrated']", "button[part='value-link']");
+		searchFacetClick("atomic-category-facet[class='hydrated']", "button[part='label-button']");
 	}
 }
 

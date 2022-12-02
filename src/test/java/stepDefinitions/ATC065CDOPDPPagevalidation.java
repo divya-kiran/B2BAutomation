@@ -23,7 +23,6 @@ public class ATC065CDOPDPPagevalidation extends BaseClass {
 	    jsClick(pdpPage.TemplatesDD);
 	    isElementDisplayed(pdpPage.LMTemplatesHeading, true);
 	    isElementDisplayed(pdpPage.LMTemplates2, true);
-	    isElementDisplayed(pdpPage.LMTemplates3, true);
 	    ScrollToElement(pdpPage.CDOProductConfigureLabel);
 	    isElementDisplayed(pdpPage.CDOProductConfigureLabel, true);
 	    isElementDisplayed(pdpPage.CDOProductInstallLabel, true);

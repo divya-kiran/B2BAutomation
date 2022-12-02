@@ -102,7 +102,7 @@ public class ATC100ValidationOfFrenchSite extends BaseClass {
 	    isElementDisplayed(checkoutPage.frReviewDetailsAttentionOfTextBox, true);
 		sendKeys(checkoutPage.frReviewDetailsAttentionOfTextBox, "Automation User");
 	    sendKeys(checkoutPage.frReviewDetailsPONumberTextBox, "Automation Test Number");
-	    sendKeys(checkoutPage.ReviewDetailsNotesTextBox, "Automation user placing an order");
+	    sendKeys(checkoutPage.ReviewDetailsJobNameTextBox, "Automation user placing an order");
 	}
 
 	@Then("^Place the order in french site$")

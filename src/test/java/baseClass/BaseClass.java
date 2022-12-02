@@ -399,7 +399,7 @@ public class BaseClass {
 			}
 		    if(shadowHost != null){	
 			SearchContext shadowRoot = shadowHost.getShadowRoot();
-			WebElement shadowContent = shadowRoot.findElement(By.cssSelector("div > div > input"));
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector("div > atomic-focus-detector > div.grow.flex.items-center > input"));
 			shadowContent.click();
 			shadowContent.clear();
 			shadowContent.sendKeys(searchString);
@@ -408,7 +408,7 @@ public class BaseClass {
 		    else{
 		    	WebElement shadowHost1 = driver.findElement(By.cssSelector("atomic-search-box[class='search-box-item hydrated focus-visible']"));
 		    	SearchContext shadowRoot1 = shadowHost1.getShadowRoot();
-				WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector("div > div > input"));
+				WebElement shadowContent1 = shadowRoot1.findElement(By.cssSelector("div > atomic-focus-detector > div.grow.flex.items-center > input"));
 				shadowContent1.click();
 				shadowContent1.clear();
 				shadowContent1.sendKeys(searchString);
@@ -431,7 +431,7 @@ public class BaseClass {
 		try {			
 		    WebElement shadowHost = driver.findElement(By.cssSelector("atomic-search-box[class='search-box-item hydrated']"));
 			SearchContext shadowRoot = shadowHost.getShadowRoot();
-			WebElement shadowContent = shadowRoot.findElement(By.cssSelector("div > div > input"));
+			WebElement shadowContent = shadowRoot.findElement(By.cssSelector("div > atomic-focus-detector > div.grow.flex.items-center > input"));
 			shadowContent.clear();
 			pageLoadTimeout();
 		} catch (Exception e) {

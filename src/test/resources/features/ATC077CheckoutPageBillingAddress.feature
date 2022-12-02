@@ -11,5 +11,5 @@ Then user navigates to cart page
 And Proceeds to checkoutpage
 And User will select shipping method
 And User will Click on shipping delivery Save button
-And User will enter credit card details for credit card details Card name "Visa" card number "4111111111111111" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserUSCC"
+And User will enter credit card details for credit card details Card name "Visa" card number "4444333322221111" Exp Month "Aug" Exp Year"2028" CVV "241" CardHolder Name "AutomationUserUSCC"
 And user Adds address in the billing address section

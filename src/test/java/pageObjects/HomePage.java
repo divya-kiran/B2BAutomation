@@ -194,7 +194,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'All Parts')]")
 	public WebElement AllPartsLink;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Parts Price Lists')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Service Parts Resources')]")
 	public WebElement PartsPriceListLink;
 	
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'myQ Connectivity Solutions')]")
@@ -233,8 +233,8 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Technical')]")
 	public WebElement TechnicalTab;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Partner Support') and @class='p3-link-external']")
-	public WebElement ResourcesPartnerSupportLink;
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Product and Service Bulletins')]")
+	public WebElement ProductandServiceLink;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Master Code Reset Utility')]")
 	public WebElement MasterCodeResetUtitlityLink;

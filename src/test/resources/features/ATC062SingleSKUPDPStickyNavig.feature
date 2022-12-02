@@ -5,13 +5,13 @@ Scenario: Verification of sticky navigation section of PDP Page
 
 Given User will log in as US registered Payment Term user
 And User verify log in is successful
-When User navigates to PDP page of product "8500"
+When User navigates to PDP page of product "8500WMC"
 Then User scroll down for sticky navigation
 And User verifies sticky navigation headers
 
 Scenario: Verification of sticky navigation section in detail of PDP page
 
-When User navigates to PDP page of product "8500"
+When User navigates to PDP page of product "8500WMC"
 Then User scroll down for sticky navigation
 And User clicks on Incentives program in sticky navigation
 And verifies web elements in Incentive section

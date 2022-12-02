@@ -1,4 +1,4 @@
-@Regression @High @PDP
+@Regression @High @PDP @TC066
 Feature: ATC066 Validation of CDO PDP page sticky navigation
 
 Scenario: Verification of CDO PDP Page sticky navigation

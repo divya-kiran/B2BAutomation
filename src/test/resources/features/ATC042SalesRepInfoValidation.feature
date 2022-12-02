@@ -1,4 +1,4 @@
-@Regression @Medium @MyAccount
+@Regression @Medium @MyAccount @TC042
 Feature: ATC042 Sales rep info Validation
 
 Scenario: Verifying sales rep info in profile section
