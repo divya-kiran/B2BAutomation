@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,7 +34,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Connexion au compte partenaire')]")
 	public WebElement PartnerAccountSignInHeaderfr;
 	
-	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Inicio de sesión de cuenta de socio')]")
+	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Inicio de sesiï¿½n de cuenta de socio')]")
 	public WebElement PartnerAccountSignInHeaderesp;
 	
 	@FindBy(how = How.XPATH, using = "//button[@class='p3-authentication__header-language-select-toggle']")
@@ -71,7 +73,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.ID, using = "forgottenPwdFormClose")
 	public WebElement ForgotPwdCancelBtn;
 	
-	@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Don’t have an account?')]")
+	@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Donï¿½t have an account?')]")
 	public WebElement DontHaveAccountLabel;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Sign up now')]")
@@ -274,7 +276,7 @@ public class LoginPage extends BaseClass{
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		wait = new WebDriverWait(this.driver, 20);
+		new WebDriverWait(driver, Duration.ofSeconds(30));
 		PageFactory.initElements(this.driver, this);
 	}
 }

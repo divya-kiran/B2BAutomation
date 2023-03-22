@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -65,7 +67,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//img[contains(@alt,'Twitter')]//parent::a")
 	public WebElement FooterTwitterLink;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'© 2022')]")
+	@FindBy(how = How.XPATH, using = "//p[contains(text(),'ï¿½ 2022')]")
 	public WebElement FooterCopyright;
 	
 	@FindBy(how = How.XPATH, using = "//img[@alt='LiftMaster']")
@@ -260,7 +262,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Garage Safety')]")
 	public WebElement GarageSafetyLink;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(.,'État de la commande')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(.,'ï¿½tat de la commande')]")
 	public WebElement frOrderStatusLink;
 	
 	@FindBy(how = How.XPATH, using = "//button[contains(.,'Commande rapide')]")
@@ -275,7 +277,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Produits')]")
 	public WebElement frProductsTab;
 	
-	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Pièces')]")
+	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Piï¿½ces')]")
 	public WebElement frPartsTab;
 	
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Ressources')]")
@@ -284,7 +286,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(.,'Estado del pedido')]")
 	public WebElement espOrderStatusLink;
 	
-	@FindBy(how = How.XPATH, using = "//button[contains(.,'PEDIDO RÁPIDO')]")
+	@FindBy(how = How.XPATH, using = "//button[contains(.,'PEDIDO Rï¿½PIDO')]")
 	public WebElement espquickOrderLink;
 	
 	@FindBy(how = How.XPATH, using = "//button[contains(@class,'p3-header__navigation-cart p3-button__text miniCart')]")
@@ -304,7 +306,7 @@ public class HomePage extends BaseClass{
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
-		wait = new WebDriverWait(this.driver, 20);
+		new WebDriverWait(driver, Duration.ofSeconds(30));
 		PageFactory.initElements(this.driver, this);
 	}
 }

@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Comparator;
@@ -137,11 +138,15 @@ public class BaseClass {
 		driver = new ChromeDriver(cap);*/
 
 		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Browserdriver\\chromedriver.exe");
-		driver = new ChromeDriver();
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
 		driver.navigate().to(appURL);
 		pageLoadTimeout();
 		return driver;
+		
+		//driver = new ChromeDriver();
 	}
 
 //	public static WebDriver initFirefoxDriver(String appURL) {
@@ -271,7 +276,9 @@ public class BaseClass {
 	public static void click(String xpath) throws ClassNotFoundException, SQLException, IOException {
 		
 			try {
-				WebDriverWait wait = new WebDriverWait(driver, 60);
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+						
+						//new WebDriverWait(driver, 100);
 				
 				wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(xpath))));
 				driver.findElement(By.xpath(xpath)).click();
@@ -727,7 +734,7 @@ public class BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		WebDriverWait wait = new WebDriverWait(driver, 80);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
 
 		wait.until(new ExpectedCondition<Boolean>() {
 			public Boolean apply(WebDriver wdriver) {
@@ -743,7 +750,7 @@ public class BaseClass {
 	public static void explicitWaitClick(WebElement element)
 	{
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 60);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 		}catch (Exception e) {
 			e.printStackTrace();
@@ -754,7 +761,7 @@ public class BaseClass {
 	public static void explicitWaitVisible(WebElement element)
 	{
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 60);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 			wait.until(ExpectedConditions.visibilityOf(element));
 		}catch (Exception e) {
 			e.printStackTrace();
@@ -1068,7 +1075,7 @@ public class BaseClass {
 	public void Switchtoframe(String framename) throws Exception {
 		try {
 			System.out.println("Navigated to New Frame");
-			WebDriverWait WDwait= new WebDriverWait(driver, 45);
+			WebDriverWait WDwait= new WebDriverWait(driver, Duration.ofSeconds(60));
 			WDwait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(framename));
 		} catch(NoSuchElementException nse){
 			System.out.println("Element Not Found | Error - "+ nse);
@@ -1080,7 +1087,7 @@ public class BaseClass {
 	public void Switchtoframe(WebElement framename) throws Exception {
 		try {
 			System.out.println("Navigated to Switchtoframe(Name) method");
-			WebDriverWait WDwait= new WebDriverWait(driver, 45);
+			WebDriverWait WDwait= new WebDriverWait(driver, Duration.ofSeconds(60));
 			WDwait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(framename));
 		} catch(NoSuchElementException nse){
 			System.out.println("Element Not Found | Error - "+ nse);
@@ -1093,7 +1100,7 @@ public class BaseClass {
 		try {
 			System.out.println("Navigated to Switchtoframe(Int) method");
 			System.out.println("No. of frame tags :  " +driver.findElement(By.tagName("iframe")));
-			WebDriverWait WDwait= new WebDriverWait(driver, 45);
+			WebDriverWait WDwait= new WebDriverWait(driver, Duration.ofSeconds(60));
 			WDwait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(a));
 		} catch(NoSuchElementException nse)
 		{

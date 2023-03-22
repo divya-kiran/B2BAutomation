@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,7 +36,7 @@ public class ContentLandingPage extends BaseClass{
 	
 	public ContentLandingPage(WebDriver driver) {
 		this.driver = driver;
-		wait = new WebDriverWait(this.driver, 20);
+		new WebDriverWait(driver, Duration.ofSeconds(30));
 		PageFactory.initElements(this.driver, this);
 	}
 }

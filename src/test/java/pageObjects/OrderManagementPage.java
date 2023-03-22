@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -50,7 +52,7 @@ public class OrderManagementPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Saved Carts')]")
 	public WebElement SavedCartLink;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'You can save items in your cart at anytime by clicking on the cart and selecting the “Save for later” button.')]")
+	@FindBy(how = How.XPATH, using = "//p[contains(text(),'You can save items in your cart at anytime by clicking on the cart and selecting the ï¿½Save for laterï¿½ button.')]")
 	public WebElement SavedCartDesc;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'My Templates')]")
@@ -62,7 +64,7 @@ public class OrderManagementPage extends BaseClass{
 	public OrderManagementPage(WebDriver driver) {
 
 		this.driver = driver;
-		wait = new WebDriverWait(this.driver, 20);
+		new WebDriverWait(driver, Duration.ofSeconds(30));
 		PageFactory.initElements(this.driver, this);
 	}
 }
