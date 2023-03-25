@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dacfa4a-fd43-455f-a4b8-c0de250b9c4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC037EditShiptToAddressValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC037EditShiptToAddressValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SmokeOrderprocessingUSPT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/B2BALLUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC037EditShiptToAddressValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC037EditShiptToAddressValidation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC038AddNewShiptToAddressValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC038AddNewShiptToAddressValidation.feature" afterDir="false" />
-    </list>
+    <list default="true" id="2dacfa4a-fd43-455f-a4b8-c0de250b9c4b" name="Changes" comment="Updated Editshipto and users" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +67,29 @@
       <option name="presentableId" value="Default" />
       <updated>1679747438808</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated Editshipto and users">
+      <created>1679755440347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679755440347</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated Editshipto and users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Editshipto and users" />
   </component>
 </project>
