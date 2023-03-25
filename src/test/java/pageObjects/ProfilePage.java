@@ -31,7 +31,7 @@ public class ProfilePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Sold-To information submitted to Liftmaster for approval.')]")
 	public WebElement ToastMsgSoldToAccount;
 	
-	@FindBy(how = How.XPATH, using = "//p[text()='Ship-To information submitted to Liftmaster for approval.']")
+	@FindBy(how = How.XPATH, using = "//div[text()='Ship-To information submitted to Liftmaster for approval.']")
 	public WebElement ToastMsgEditShipToAccount;
 	
 	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Invitation Sent')]")

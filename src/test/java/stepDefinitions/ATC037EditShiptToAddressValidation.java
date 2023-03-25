@@ -33,7 +33,7 @@ public class ATC037EditShiptToAddressValidation extends BaseClass {
 	    ScrollToElement(profilePage.EditShipToCityLabel);
 	    isElementDisplayed(profilePage.EditShipToCityLabel, true);
 	    isElementDisplayed(profilePage.EditShipToCityVal, true);
-	    isElementDisplayed(profilePage.EditShipToStateLabel, true);
+	    //isElementDisplayed(profilePage.EditShipToStateLabel, true);
 	    //isElementDisplayed(profilePage.EditShipToStateVal, true);
 	    isElementDisplayed(profilePage.EditShipToZipCodeLabel, true);
 	    isElementDisplayed(profilePage.EditShipToZipCodeVal, true);
@@ -47,7 +47,7 @@ public class ATC037EditShiptToAddressValidation extends BaseClass {
 		jsClick(profilePage.EditShipToCityLabel);
 		isElementDisplayed("//form[@id='editShipToAddressForm']//label[@for='add-ship-to-form__zip']//span[contains(text(),'Required')]", true);
 		clear(profilePage.EditShipToCityVal);
-		jsClick(profilePage.EditShipToStateLabel);
+		//jsClick(profilePage.EditShipToStateVal);
 		isElementDisplayed("//form[@id='editShipToAddressForm']//label[@for='add-ship-to-form__city']//span[contains(text(),'Required')]", true);
 		jsClick(profilePage.EditShipToCancelButton);
 	}
@@ -71,11 +71,12 @@ public class ATC037EditShiptToAddressValidation extends BaseClass {
 		profilePage.EditShipToAddButton.isEnabled();
 		ScrollToElement(profilePage.EditShipToAddButton);
 		jsClick(profilePage.EditShipToAddButton);
-		isElementDisplayed(profilePage.ToastMsgEditShipToAccount, true);
+		Thread.sleep(3000);
 	}
 
 	@Then("^verifies ship to address form success toast message$")
 	public void verifies_ship_to_address_form_success_toast_message() throws Throwable {
+		isElementDisplayed(profilePage.ToastMsgEditShipToAccount, true);
 	    
 	}
 

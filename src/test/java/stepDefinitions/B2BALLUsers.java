@@ -1,11 +1,7 @@
 package stepDefinitions;
 
 
-import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import baseClass.BaseClass;
@@ -20,9 +16,8 @@ import pageObjects.LoginPage;
 import pageObjects.MiniCartFlyerPage;
 import pageObjects.OrderConfirmationPage;
 import pageObjects.QuickOrderPage;
-import org.openqa.selenium.interactions.Actions;
 
-public class SmokeOrderprocessingUSPT extends BaseClass {
+public class B2BALLUsers extends BaseClass {
 	
 	   LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 	   HomePage homepage = PageFactory.initElements(driver, HomePage.class);
@@ -87,7 +82,7 @@ public class SmokeOrderprocessingUSPT extends BaseClass {
 	public void user_will_log_in_as_CA_registered_Credit_card_user() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"logout");
 		pageLoadTimeout();
-	   sendKeys(loginpage.userName, "automationcacc@mailinator.com");
+	   sendKeys(loginpage.userName, "automationusercacc@mailinator.com");
 	   sendKeys(loginpage.password, "Test@123");
 	   click(loginpage.PartnerAccountSignInHeader);
 	   jsClick(loginpage.signinButton);
