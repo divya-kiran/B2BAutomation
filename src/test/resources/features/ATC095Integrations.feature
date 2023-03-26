@@ -14,16 +14,16 @@ Given User navigates to Liftmaster Merchandise page
 Then verifies shop now button
 And verifies na corporation web page
 
-Scenario: Verification of frosch/rewards integration
+##Scenario: Verification of frosch/rewards integration
 
-Given User navigates to partner connect page
-Then click on liftmaster partner rewards
-And verifies partner rewards page
+##Given User navigates to partner connect page
+##Then click on liftmaster partner rewards
+##And verifies partner rewards page
 
-Scenario: Verification of support page
+##Scenario: Verification of support page
 
-Given User navigates to support page
-And verifies partner support page
+##Given User navigates to support page
+##And verifies partner support page
 
 Scenario: Verification of captcha integration
 

@@ -183,7 +183,7 @@ public class ATC045ValidationofRGAPage extends BaseClass {
 			e.printStackTrace();
 			driver.navigate().to(configFileReader.getApplicationUrl());
 		}
-		isElementDisplayed("//span[contains(text(),'2022 The Chamberlain Group LLC')]", true);
+		isElementDisplayed("//span[contains(text(),'2023 The Chamberlain Group LLC')]", true);
 		isElementDisplayed("//span[contains(text(),'300 Windsor Drive Oak Brook, IL')]", true);
 		driver.navigate().to(configFileReader.getApplicationUrl());	    
 	}
@@ -199,7 +199,8 @@ public class ATC045ValidationofRGAPage extends BaseClass {
 	public void user_fills_RGA_for_another_item_to_return() throws Throwable {
 		sendKeys(rgaPage.MaterialVal, "1234567");
 	    jsClick(rgaPage.ReturnReasonDD);
-	    jsClick(rgaPage.ReturnReasonDD2);
+		Thread.sleep(3000);
+	    jsClick(rgaPage.ReturnReasonDD3);
 	    sendKeys(rgaPage.QtyTB, "5");
 	    sendKeys(rgaPage.SerialNumTB, "123456");
 	    sendKeys(rgaPage.ReturnReasonSympTB, "Returning an RGA using Automation Test scenario 1");
@@ -208,7 +209,8 @@ public class ATC045ValidationofRGAPage extends BaseClass {
 	    jsClick(rgaPage.AddAnotherRGA);
 	    sendKeys(rgaPage.MaterialVal, "12345678");
 	    jsClick(rgaPage.ReturnReasonDD);
-	    jsClick(rgaPage.ReturnReasonDD5);
+		Thread.sleep(3000);
+	    jsClick(rgaPage.ReturnReasonDD3);
 	    sendKeys(rgaPage.QtyTB, "50");
 	    sendKeys(rgaPage.SerialNumTB, "1234567");
 	    sendKeys(rgaPage.ReturnReasonSympTB, "Returning an RGA using Automation Test scenario 2");

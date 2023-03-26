@@ -1,4 +1,4 @@
-@Smoke
+@Smoke @Regression @ATC06
 Feature: ATC06 Validating Parts Menu PLP pages
 
 Scenario: Verification of Garage door opener parts  PLP page

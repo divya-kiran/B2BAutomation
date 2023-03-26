@@ -52,7 +52,7 @@ public class OrderManagementPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Saved Carts')]")
 	public WebElement SavedCartLink;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'You can save items in your cart at anytime by clicking on the cart and selecting the �Save for later� button.')]")
+	@FindBy(how = How.XPATH, using = "//p[contains(text(),'You can save items in your cart at anytime by clicking on the cart and selecting the “Save for later” button.')]")
 	public WebElement SavedCartDesc;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'My Templates')]")

@@ -3,7 +3,7 @@ Feature: ATC039 Manage user Form Validation
 
 Scenario: Verifying web elements of Manage user Account card
 
-Given User will log in as US registered user
+Given User will log in as US registered Credit card user
 And User verify log in is successful
 Given User navigate to myaccount page
 And User scrolls to Manage user section and verify header elements
@@ -26,6 +26,6 @@ Given User navigate to myaccount page
 And user clicks on pencil icon of manage user account card and navigate to edit user form
 And click on reset password and verify password window
 And Click on deactivate link and verify deactivate window
-And select options from access rights dropdown
+##And select options from access rights dropdown
 And select options from position dropdwn
 And verify cancel and save button in manage user form

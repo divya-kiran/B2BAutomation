@@ -67,7 +67,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//img[contains(@alt,'Twitter')]//parent::a")
 	public WebElement FooterTwitterLink;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'� 2022')]")
+	@FindBy(how = How.XPATH, using = "//p[@class='p3-footer__copyright col-xs-12 col-lg-6']")
 	public WebElement FooterCopyright;
 	
 	@FindBy(how = How.XPATH, using = "//img[@alt='LiftMaster']")
@@ -142,7 +142,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Partner Rewards')]")
 	public WebElement PartnerRewardsHeading;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Connect to myQ & Key')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'About myQ Diagnostics')]")
 	public WebElement ConnectToMyQKey;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Connect to Key for Technicians')]")

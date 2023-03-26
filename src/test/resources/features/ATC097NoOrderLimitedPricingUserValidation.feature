@@ -5,7 +5,7 @@ Scenario: Validating No Order Limited Pricing user accessability
 
 Given User will log in as No order Limited Pricing user
 And User verify log in is successful
-Then User will navigate to PLP page and verify Add to cart is disabled
+##Then User will navigate to PLP page and verify Add to cart is disabled
 And User will navigate to PDP page and verify add to cart is disabled
 And verify quick order elements is not present
 

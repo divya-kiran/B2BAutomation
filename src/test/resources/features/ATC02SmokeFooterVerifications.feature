@@ -1,4 +1,4 @@
-@Smoke
+@Smoke @ATC02 @Regression
 Feature: ATC02 Verify Footer links are displayed or not
 
 Scenario: Verification of footer links  

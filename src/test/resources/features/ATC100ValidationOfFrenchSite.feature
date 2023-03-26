@@ -1,4 +1,4 @@
-@FrenchSite @Translations
+@FrenchSite @Translations @ATC100 @Regression
 Feature: ATC100 Validation of french website
 
 Scenario: Validating french website

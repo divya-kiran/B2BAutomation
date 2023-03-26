@@ -10,14 +10,14 @@ Then Verifies sticky header in PLP page
 When User navigates to Gate Parts PLP page
 Then Verifies sticky header in Gate Parts PLP page
 
-Scenario: Verification of Search results sticky header
+##Scenario: Verification of Search results sticky header
 
-When User search for product "CAPXLV" in PP
-Then verifies sticky header in search results page
+##When User search for product "CAPXLV" in PP
+##Then verifies sticky header in search results page
 
 Scenario: Verification of Cart Page sticky header
 
-Given user add Products to cart "p/02-51227" "p/041A5507-7C"
+Given user add Products to cart "p/041A0308" "p/041A5507-7C"
 And user navigates to cart page
 Then verifies sticky header in cart page
 

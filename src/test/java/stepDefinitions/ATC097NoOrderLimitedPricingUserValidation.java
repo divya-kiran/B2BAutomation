@@ -30,7 +30,7 @@ public class ATC097NoOrderLimitedPricingUserValidation extends BaseClass {
 
 	@Then("^User will navigate to PLP page and verify Add to cart is disabled$")
 	public void user_will_navigate_to_PLP_page_and_verify_Add_to_cart_is_disabled() throws Throwable {
-		driver.navigate().to(configFileReader.getApplicationUrl()+"c/12");
+		driver.navigate().to(configFileReader.getApplicationUrl()+"Products/Parts/Garage-Door-Opener-Parts/c/6#tab=products");
 //		ScrollToElement(plpPage.PLPproductimage);
 //		isElementDisplayed(plpPage.PLPproductimage, true);
 //	    isElementDisplayed(plpPage.PLPproductName, true);

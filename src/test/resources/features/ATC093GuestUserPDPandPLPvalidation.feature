@@ -12,7 +12,7 @@ Then Verifies sticky header in PLP page
 
 Scenario: Verification of PDP page for guest user
 
-When User navigates to PDP page of product "CSL24UL"
+When User navigates to PDP page of product "CSL24ULMC"
 Then Verify become a partner link in PDP page
 And Scroll to bottom for sticky navigation
 Then user verifies Become a partner link in sticky navigation of PDP page

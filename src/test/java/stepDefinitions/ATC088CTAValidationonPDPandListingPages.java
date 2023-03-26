@@ -29,7 +29,7 @@ public class ATC088CTAValidationonPDPandListingPages extends BaseClass {
 	
 	@When("^User search for NotifyME product \"([^\"]*)\"$")
 	public void user_search_for_NotifyME_product(String arg1) throws Throwable {
-		searchText("893LM");
+		searchText("8550WLB");
 	}
 	
 	@When("^User search for Custom CTA product \"([^\"]*)\"$")
@@ -93,15 +93,16 @@ public class ATC088CTAValidationonPDPandListingPages extends BaseClass {
 		{
 			AcceptCookies.click();
 		}
-		searchElementCTA("atomic-result-list[class='hydrated']","div > div > div:nth-child(1) > a", "div > atomic-result-section-actions > result-product-cta-component", "section > div > div > a");
-		searchElementCTAClick("atomic-result-list[class='hydrated']","atomic-result[class='hydrated']", "div > atomic-result-section-actions > result-product-cta-component", "section > div > div > a");
+		searchElementCTA("atomic-result-list[class='hydrated']","atomic-result[class='hydrated']", "div > atomic-result-section-actions > result-product-cta-component", "p[id='notify-me-message']");
+		searchProductCardClick("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a");
+
 	}
 
-	@Then("^Verify NotifyME message in search results page$")
+	/*@Then("^Verify NotifyME message in search results page$")
 	public void verify_NotifyME_message_in_search_results_page() throws Throwable {
 		searchElementCTA("atomic-result-list[class='hydrated']","atomic-result[class='hydrated']", "div > atomic-result-section-actions > result-product-cta-component", "p[id='notify-me-message']");
 		searchProductCardClick("atomic-result-list[class='hydrated']", "div > div > div:nth-child(1) > a");
-	}
+	}*/
 
 	@Then("^verify NotifyME CTA on PDP page$")
 	public void verify_NotifyME_CTA_on_PDP_page() throws Throwable {

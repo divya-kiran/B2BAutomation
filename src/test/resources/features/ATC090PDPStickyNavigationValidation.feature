@@ -21,11 +21,11 @@ When User navigates to PDP page of product "CAPXLV"
 And Scroll to bottom for sticky navigation
 ##Then user verifies Custom CTA in sticky navigation of PDP page
 
-##Scenario: Verification of NotifyME CTA in sticky header
+Scenario: Verification of NotifyME CTA in sticky header
 
-##When User navigates to PDP page of product "G893LMMC"
-##And Scroll to bottom for sticky navigation
-##Then user verifies Notify ME CTA in sticky navigation of PDP page
+When User navigates to PDP page of product "8550WLB"
+And Scroll to bottom for sticky navigation
+Then user verifies Notify ME CTA in sticky navigation of PDP page
 
 Scenario: Verification of Add to Cart CTA in sticky header for CDO products
 

@@ -220,7 +220,7 @@ public class CheckoutPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//p[@class='p3-product__description'])[1]")
 	public WebElement ProductDescCheckoutPage;
 	
-	@FindBy(how = How.XPATH, using = "(//p[@class='p3-product__price'])[1]")
+	@FindBy(how = How.XPATH, using = "(//p[@class='p3-product__my-price'])[1]")
 	public WebElement ProductEachPriceCheckoutPage;
 	
 	@FindBy(how = How.XPATH, using = "(//div[@class='p3-product__quantity'])[1]")

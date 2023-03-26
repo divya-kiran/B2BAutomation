@@ -24,11 +24,13 @@ public class SmokeProductMenuPLPPagesValidation extends BaseClass {
 
 	   @Then("^Verify page by URL \"([^\"]*)\"$")
 	   public void verify_page_by_URL(String arg1) throws Throwable {
+		   Thread.sleep(3000);
 		   verifypageURL(arg1);
 	   }
 
 	   @Then("^Verify Page by title \"([^\"]*)\"$")
 	   public void verify_Page_by_title(String arg1) throws Throwable {
+		   Thread.sleep(3000);
 	       verifypagetitle(arg1);
 	   }
 

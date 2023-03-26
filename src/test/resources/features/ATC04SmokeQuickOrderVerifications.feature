@@ -1,4 +1,4 @@
-@Smoke
+@Smoke @ATC04 @Regression
 Feature: ATC04 Verify quick order widget functionality
 
 Scenario: Verification of quick order widget elements  

@@ -1,4 +1,4 @@
-@Regression @High @PlaceOrder
+@Regression @High @PlaceOrder @ATC013
 Feature: ATC013 Placing an drop ship order using US registered Payment terms user
 
 Scenario: Placing an order drop ship using US registered Payment Terms user  

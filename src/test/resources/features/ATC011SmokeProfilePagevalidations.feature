@@ -1,5 +1,5 @@
-@Smoke
-Feature: ATC11 Verify profile section
+@Smoke @Regression @ATC011
+Feature: ATC011 Verify profile section
 
 Scenario: Verification of profile section
 

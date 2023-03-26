@@ -1,4 +1,4 @@
-@Regression @High @PlaceOrder
+@Regression @High @PlaceOrder @TC096
 Feature: ATC096 Validating order confirmation email for US registered Credit card user with billing address
 
 Scenario: Validating order confirmation email for US registered Credit card user with billing address

@@ -1,5 +1,5 @@
-@Smoke @Regression
-Feature: ATC12 Placing an order using CA registered Credit card user
+@Smoke @Regression @ATC012
+Feature: ATC012 Placing an order using CA registered Credit card user
 
 Scenario: Placing an order using CA registered Credit card user  
 

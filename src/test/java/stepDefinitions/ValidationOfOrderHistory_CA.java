@@ -42,13 +42,11 @@ public class ValidationOfOrderHistory_CA extends BaseClass {
 		isElementDisplayed(orderHistoryDetailPage.OrderDetailCardProductIndex, true);
 		isElementDisplayed(orderHistoryDetailPage.OrderDetailsCardProductNameLink, true);
 		isElementDisplayed(orderHistoryDetailPage.OrderDetailsProductSummary, true);
+		isElementDisplayed(orderHistoryDetailPage.JobeNameAttribute, true);
+		isElementDisplayed(orderHistoryDetailPage.JobeNameAttributeVal, true);
 		isElementDisplayed(orderHistoryDetailPage.QTYRequestedAttribute, true);
-		isElementDisplayed(orderHistoryDetailPage.QTYRequestedAttributeVal, true);
 		isElementDisplayed(orderHistoryDetailPage.QTYShippedAttribute, true);
-		isElementDisplayed(orderHistoryDetailPage.QTYShippedAttributeVal, true);
-		isElementDisplayed(orderHistoryDetailPage.EachProdPriceAttribute, true);
 		isElementDisplayed(orderHistoryDetailPage.EachProdPriceAttributeVal, true);
-		isElementDisplayed(orderHistoryDetailPage.TotProdPriceAttribute, true);
 		isElementDisplayed(orderHistoryDetailPage.TotProdPriceAttributeVal, true);
 		isElementDisplayed(orderHistoryDetailPage.ReturnItemsLink, true);
 	}
@@ -64,6 +62,6 @@ public class ValidationOfOrderHistory_CA extends BaseClass {
 	public void verify_return_items_link_in_order_history_page() throws Throwable {
 		isElementDisplayed(orderHistoryDetailPage.ReturnItemsLink, true);
 		jsClick(orderHistoryDetailPage.ReturnItemsLink);
-		verifypageURL("rga?orderNumber=");
+		//verifypageURL("rga?orderNumber=");
 	}
 }

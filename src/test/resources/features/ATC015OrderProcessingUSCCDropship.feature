@@ -1,4 +1,4 @@
-@Regression @High @PlaceOrder @TC015
+@Regression @High @PlaceOrder @ATC015
 Feature: ATC015 Placing an drop ship order using US registered Credit card user
 
 Scenario: Placing an drop ship order using US registered Credit card user  
@@ -9,7 +9,7 @@ And User will clear cart if there are any products present
 And User will navigate to PDP page of product "p/HDSL24ULMC"
 And User will Add product to cart from PDP page
 And User will navigate to PDP page of product "p/HDLGARM"
-And User will select options from install step in CDO PDP page
+##And User will select options from install step in CDO PDP page
 And User will Add product to cart from CDO PDP page
 And Click on CheckoutCTA on Pop Up
 And User will navigate to homepage

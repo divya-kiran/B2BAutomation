@@ -157,13 +157,13 @@ public class RGAPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//div[@id='p3-dropdown__form-item-return-reason-code']//div[@class='p3-dropdown__button']")
 	public WebElement ReturnReasonDD;
 	
-	@FindBy(how = How.XPATH, using = "//input[@value='Defective � Already Replaced']//parent::label")
+	@FindBy(how = How.XPATH, using = "//input[@value='Defective – Already Replaced']//parent::label")
 	public WebElement ReturnReasonDD1;
 	
-	@FindBy(how = How.XPATH, using = "//input[contains(@value,'Defective � In Warranty � Issue Credit')]//parent::label")
+	@FindBy(how = How.XPATH, using = "//input[contains(@value='Defective – In Warranty – Issue Credit ')]//parent::label")
 	public WebElement ReturnReasonDD2;
 	
-	@FindBy(how = How.XPATH, using = "//input[@value='Defective � In Warranty � Replace']//parent::label")
+	@FindBy(how = How.XPATH, using = "//input[@value='Defective – In Warranty – Replace']//parent::label")
 	public WebElement ReturnReasonDD3;
 	
 	@FindBy(how = How.XPATH, using = "//input[@value='Advance Replace in Warranty']//parent::label")

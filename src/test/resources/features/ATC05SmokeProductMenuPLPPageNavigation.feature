@@ -1,4 +1,4 @@
-@Smoke @High @PMenuPLP
+@Smoke @High @PMenuPLP @Regression @ATC05
 Feature: ATC05 Validating Product Menu PLP pages
 
 Scenario: Verification of Garage door opener systems  PLP page

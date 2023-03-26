@@ -1,4 +1,4 @@
-@Smoke
+@Smoke @Regression @ATC03
 Feature: ATC03 Verify Header links are displayed or not
 
 Scenario: Verification of Header links  

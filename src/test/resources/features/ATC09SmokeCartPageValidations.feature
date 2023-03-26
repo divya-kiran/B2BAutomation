@@ -1,4 +1,4 @@
-@Smoke
+@Smoke @ATC09 @Regression
 Feature: ATC09 Verifying Cart page
 
 Scenario: Cart page validations for a single product

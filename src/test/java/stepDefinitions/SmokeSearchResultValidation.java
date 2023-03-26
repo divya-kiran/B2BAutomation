@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import java.util.Properties;
 
+import gherkin.lexer.Th;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
@@ -26,7 +27,8 @@ public class SmokeSearchResultValidation extends BaseClass {
 //	   sendKeys(homepage.HeaderSearchTextBox, arg1);
 //	   homepage.HeaderSearchTextBox.sendKeys(Keys.RETURN);
 //	   CompareExactText(searchResultsPage.SearchText, arg1);
-		searchText("8500");
+		Thread.sleep(3000);
+		searchText("8500WMC");
 	}
 
 	@Then("^Verify Search results page header$")

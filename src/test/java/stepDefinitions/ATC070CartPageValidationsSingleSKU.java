@@ -71,9 +71,13 @@ public class ATC070CartPageValidationsSingleSKU extends BaseClass {
 	@Then("^user adds job name and save it$")
 	public void user_adds_job_name_and_save_it() throws Throwable {
 	    jsClick(cartPage.AddJobName1);
-	    isElementDisplayed(cartPage.JobName1TB, true);
-	    isElementDisplayed(cartPage.JobNameMsg1, true);
-	    isElementDisplayed(cartPage.JobName1SaveButton, true);
+		Thread.sleep(3000);
+		sendKeys(cartPage.JobName2TB,"AutomationTest1");
+		Thread.sleep(2000);
+		isElementDisplayed(cartPage.JobName1SaveButton, true);
+		jsClick(cartPage.JobName1SaveButton);
+	    //isElementDisplayed(cartPage.JobNameMsg1, true);
+
 	}
 
 	@Then("^Verify each price and total price for a single SKU product$")

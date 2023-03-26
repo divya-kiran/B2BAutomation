@@ -44,7 +44,7 @@ public class ReorderValidation extends BaseClass {
 	    click(orderHistoryDetailsPage.ReorderLink);
 	    verifypageURL("cart");
 	    isElementDisplayed("//div[contains(text(),'041A5507-7C')]", true);
-	    isElementDisplayed("//div[contains(text(),'02-51227')]", true);
+	    isElementDisplayed("//div[contains(text(),'001A4811')]", true);
 	}
 	
 	@Then("^User navigates to the order history detail page of recently placed order$")
@@ -86,7 +86,7 @@ public class ReorderValidation extends BaseClass {
 	    pageLoadTimeout();
 	    try {		
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//a[contains(text(),'02-51227')]")));
+			executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//a[contains(text(),'001A4811')]")));
 			pageLoadTimeout();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -94,8 +94,8 @@ public class ReorderValidation extends BaseClass {
 			Assert.assertTrue("Product link Not Found in order history detail page| Error - " + e,false);
 			//Reporter.log("Element Not Found" + element + "| Error - " + e);
 		} 
-	    verifypageURL("p/02-51227");
-	    isElementDisplayed("//h1[contains(text(),'02-51227')]", true);
+	    verifypageURL("p/001A4811");
+	    isElementDisplayed("//h1[contains(text(),'001A4811')]", true);
 	    driver.navigate().back();
 	    pageLoadTimeout();
 	}

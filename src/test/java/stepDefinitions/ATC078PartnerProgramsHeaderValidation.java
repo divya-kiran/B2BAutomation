@@ -35,7 +35,7 @@ public class ATC078PartnerProgramsHeaderValidation extends BaseClass {
 		elementHover(homePage.PartnerProgramsTab);
 	    isElementDisplayed(homePage.ConnectToMyQKey, true);
 	    jsClick(homePage.ConnectToMyQKey);
-	    verifypageURL("/connect");
+	    verifypageURL("/myq-diagnostics");
 	}
 
 	@Then("^click on connect to MyQ and Key link and verify page$")

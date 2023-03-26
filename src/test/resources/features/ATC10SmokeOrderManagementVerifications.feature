@@ -1,4 +1,4 @@
-@Smoke
+@Smoke @ATC10 @Regression
 Feature: ATC10 Verifying Order management section - Include saved carts, Warranty claim and RGA
 
 Scenario: Validation of order management

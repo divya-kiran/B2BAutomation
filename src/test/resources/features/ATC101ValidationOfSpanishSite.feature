@@ -1,4 +1,4 @@
-@SpanishSite @Translations
+@SpanishSite @Translations @Regression @ATC101
 Feature: ATC101 Validation of Spanish website
 
 Scenario: Validating Spanish website

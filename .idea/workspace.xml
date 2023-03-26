@@ -4,7 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dacfa4a-fd43-455f-a4b8-c0de250b9c4b" name="Changes" comment="Updated Editshipto and users" />
+    <list default="true" id="2dacfa4a-fd43-455f-a4b8-c0de250b9c4b" name="Changes" comment="Updated Editshipto and users">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/OrderHistoryDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/OrderHistoryDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/OrderManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/OrderManagementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/RGAPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RGAPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC041InviteUserEmailvalidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC041InviteUserEmailvalidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC045ValidationofRGAPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC045ValidationofRGAPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC047ValidationofWarrantyClaim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC047ValidationofWarrantyClaim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC070CartPageValidationsSingleSKU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC070CartPageValidationsSingleSKU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC078PartnerProgramsHeaderValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC078PartnerProgramsHeaderValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC083LoginPageValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC083LoginPageValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC088CTAValidationonPDPandListingPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC088CTAValidationonPDPandListingPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC097NoOrderLimitedPricingUserValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC097NoOrderLimitedPricingUserValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ReorderValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ReorderValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SmokeProductMenuPLPPagesValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SmokeProductMenuPLPPagesValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SmokeSearchResultValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SmokeSearchResultValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ValidationOfOrderHistory_CA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ValidationOfOrderHistory_CA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC039ManageUserValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC039ManageUserValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC040InviteUservalidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC040InviteUservalidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC041InviteUserEmailvalidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC041InviteUserEmailvalidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC047ValidationofWarrantyClaim.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC047ValidationofWarrantyClaim.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC062SingleSKUPDPStickyNavig.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC062SingleSKUPDPStickyNavig.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC088CTAValidationonPDPandListingPages.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC088CTAValidationonPDPandListingPages.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC090PDPStickyNavigationValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC090PDPStickyNavigationValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC091StickyNavigationPartnerPortal.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC091StickyNavigationPartnerPortal.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC093GuestUserPDPandPLPvalidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC093GuestUserPDPandPLPvalidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC094GuestUserCheckPointValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC094GuestUserCheckPointValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC095Integrations.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC095Integrations.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC096EmailValidationUSCCUserWithBillingAddress.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC096EmailValidationUSCCUserWithBillingAddress.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC097NoOrderLimitedPricingUserValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC097NoOrderLimitedPricingUserValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC098NoOrderNoPricingUserValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC098NoOrderNoPricingUserValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC100ValidationOfFrenchSite.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC100ValidationOfFrenchSite.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC101ValidationOfSpanishSite.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC101ValidationOfSpanishSite.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/OrderProcessingCAGuest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC019OrderProcessingCAGuest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/OrderProcessingUSCC.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC014OrderProcessingUSCC.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/OrderProcessingUSCCDropship.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC015OrderProcessingUSCCDropship.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/OrderProcessingUSGuest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC020OrderProcessingUSGuest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/OrderProcessingUSPTDropship.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC013OrderProcessingUSPTDropship.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/OrderprocessingCAPT.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC016OrderprocessingCAPT.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/OrderprocessingCAPTDropship.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC017OrderprocessingCAPTDropship.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ReorderDisabledValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC024ReorderDisabledValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ReorderValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC023ReorderValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeCartPageValidations.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC09SmokeCartPageValidations.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeFooterVerifications.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC02SmokeFooterVerifications.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeHeaderMenuVerifications.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC03SmokeHeaderMenuVerifications.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeOrderManagementVerifications.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC10SmokeOrderManagementVerifications.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeOrderProcessingCACC.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC012SmokeOrderProcessingCACC.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeOrderprocessingUSPT.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC01SmokeOrderprocessingUSPT.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokePDPPageValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC07SmokePDPPageValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokePartsMenuPLPPageNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC06SmokePartsMenuPLPPageNavigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeProductMenuPLPPageNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC05SmokeProductMenuPLPPageNavigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeProfilePagevalidations.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC011SmokeProfilePagevalidations.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeQuickOrderVerifications.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC04SmokeQuickOrderVerifications.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeSearchResultValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC08SmokeSearchResultValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ValidationOfOrderHistory_CA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC022ValidationOfOrderHistory_CA.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ValidationOfOrderHistory_US.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC021ValidationOfOrderHistory_US.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679755440347</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated Editshipto and users">
+      <created>1679755678739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679755678739</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,4 +1,4 @@
-@Regression @High @Warranty @EmailValidation
+@Regression @High @Warranty @EmailValidation @TC047
 Feature: ATC047 Validation of Warranty claim page
 
 Scenario: Verification of web elements in terms and condition Page

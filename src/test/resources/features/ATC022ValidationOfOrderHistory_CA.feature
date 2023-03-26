@@ -1,4 +1,4 @@
-@Regression @High @OrderHistory
+@Regression @High @OrderHistory @ATC022
 Feature: ATC022 Validation of order history and order detail page content for CA registered user
 
 Scenario: Validating order history page

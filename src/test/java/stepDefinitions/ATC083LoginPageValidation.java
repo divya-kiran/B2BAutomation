@@ -97,7 +97,7 @@ public class ATC083LoginPageValidation extends BaseClass {
 
 	@Then("^user enters chamberlain email address in forgot password text box$")
 	public void user_enters_chamberlain_email_address_in_forgot_password_text_box() throws Throwable {
-		sendKeys(loginPage.EmailAdd, "bala.pradeep@chamberlain.com");
+		sendKeys(loginPage.EmailAdd, "divya.kiran@chamberlain.com");
 		isElementDisplayed(loginPage.ForgotPwdPopupHeader, true);
 		click(loginPage.ForgotPwdPopupHeader);
 	}
@@ -129,7 +129,7 @@ public class ATC083LoginPageValidation extends BaseClass {
 			e.printStackTrace();
 			driver.navigate().to(configFileReader.getApplicationUrl());
 		}
-		isElementDisplayed("//span[contains(text(),'2022 The Chamberlain Group LLC')]", true);
+		isElementDisplayed("//span[contains(text(),'2023 The Chamberlain Group LLC')]", true);
 		isElementDisplayed("//span[contains(text(),'300 Windsor Drive Oak Brook, IL')]", true);
 		driver.navigate().to(configFileReader.getApplicationUrl());
 	}

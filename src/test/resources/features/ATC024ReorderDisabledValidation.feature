@@ -1,4 +1,4 @@
-@Regression @High @OrderHistory
+@Regression @High @OrderHistory @ATC024
 Feature: ATC024 Validation of Order detail page with order again option disabled
 
 Scenario: Validating re order button in order history detail page

@@ -88,16 +88,16 @@ public class CartPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Save Cart') and contains(@type,'submit')]")
 	public WebElement SaveCartSubmitButton;
 	
-	@FindBy(how = How.XPATH, using = "(//button[contains(text(),'Add job name')])[1]")
+	@FindBy(how = How.XPATH, using = "(//button[contains(text(),'Add job name')][1])")
 	public WebElement AddJobName1;
-	
-	@FindBy(how = How.XPATH, using = "(//input[contains(@name,'jobName')])[1]")
-	public WebElement JobName1TB;
-			
-	@FindBy(how = How.XPATH, using = "(//button[contains(@class,'p3-button__primary p3-product__job-name-save')])[1]")
+
+	@FindBy(how = How.XPATH, using = "(//label[@class='p3-product__job-name-label']//input[@id='jobName1000'])")
+	public WebElement JobName2TB;
+
+	@FindBy(how = How.XPATH, using = "(//button[contains(@class,'p3-button__primary p3-product__job-name-save')][1])")
 	public WebElement JobName1SaveButton;
 	
-	@FindBy(how = How.XPATH, using = "(//span[contains(@class,'p3-product__job-name-message')])[1]")
+	@FindBy(how = How.XPATH, using = "(//span[contains(@class,'p3-product__job-name-message')][1])")
 	public WebElement JobNameMsg1;
 	
 	@FindBy(how = How.XPATH, using = "//button[contains(@data-dialog,'clear-cart')]")
@@ -118,7 +118,7 @@ public class CartPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "(//a[contains(@class,'p3-product__name')])[1]")
 	public WebElement CartPageProductName1;
 	
-	@FindBy(how = How.XPATH, using = "(//p[contains(@class,'p3-product__price')])[1]")
+	@FindBy(how = How.XPATH, using = "(//p[contains(@class,'p3-product__my-price')][1])")
 	public WebElement CartPageEachProdPrice1;
 	
 	@FindBy(how = How.XPATH, using = "(//p[contains(@class,'p3-product__price')])[2]")

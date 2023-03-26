@@ -58,10 +58,10 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Forgot password?')]")
 	public WebElement ForgotPwdPopupHeader;
 	
-	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Forgot password?')]//following-sibling::span[contains(text(),'* Required')]")
+	@FindBy(how = How.XPATH, using = "//span[@class = 'p3-dialog__label form-required-label']")
 	public WebElement ForgotPwdPopupReqLabel;
 	
-	@FindBy(how = How.XPATH, using = "//p[contains(text(),'Please enter the email address for your account. A link to change your password will be emailed to you')]")
+	@FindBy(how = How.XPATH, using = "//p[@class='p3-dialog__message']")
 	public WebElement ForgotPwdPopupText;
 	
 	@FindBy(how = How.ID, using = "forgottenPwdEmail")
@@ -73,7 +73,7 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.ID, using = "forgottenPwdFormClose")
 	public WebElement ForgotPwdCancelBtn;
 	
-	@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Don�t have an account?')]")
+	@FindBy(how = How.XPATH, using = "//h3[contains(text(),'Don’t have an account?')]")
 	public WebElement DontHaveAccountLabel;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Sign up now')]")
@@ -172,10 +172,10 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Guest Registration')]")
 	public WebElement GuestRegHeading;
 	
-	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Guest Registration')]//following-sibling::span[contains(text(),'* Required')]")
+	@FindBy(how = How.XPATH, using = "//span[@class='p3-signup__form-label form-required-label']")
 	public WebElement GuestRegReqLabel;
 	
-	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Please fill in the information below to register for the LiftMaster Partner Portal')]")
+	@FindBy(how = How.XPATH, using = "//span[@class='p3-request-message']")
 	public WebElement GuestRegLabel;
 	
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'m interested in becoming a LiftMaster partner. Please check this box if you') and contains(text(),'d like our Sales team to reach out to you')]")
