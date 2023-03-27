@@ -21,7 +21,10 @@ public class PDPPage extends BaseClass{
 	
 	@FindBy(how = How.ID, using = "addToCartButton")
 	public WebElement ProductAddToCartCTA;
-	
+
+	@FindBy(how = How.XPATH, using = "//button[@class='add-to-cart__p3-dialog__close']")
+	public WebElement AddToCartPoPUp;
+
 	@FindBy(how = How.XPATH, using = "//input[@class='p3-subsection-row-box__row-count js-qty']")
 	public WebElement AddRails;
 	

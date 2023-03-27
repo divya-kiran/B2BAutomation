@@ -1,4 +1,4 @@
-@Smoke @Regression @ATC07
+@Smoke @ATC07
 Feature: ATC07 Validating PDP pages
 
 Scenario: Verification PDP page for single SKU product

@@ -81,6 +81,7 @@ public class ATC101ValidationOfSpanishSite extends BaseClass {
 	@Given("^Add product to cart in spanish site$")
 	public void add_product_to_cart_in_spanish_site() throws Throwable {
 		jsClick(pdpPage.ProductAddToCartCTA);
+		jsClick(pdpPage.AddToCartPoPUp);
 	    jsClick(homepage.LiftMasterLogo);	    
 	}
 

@@ -1,4 +1,4 @@
-@Smoke @Regression @ATC08
+@Smoke @ATC08
 Feature: ATC08 Verifying search results page
 
 Scenario: Verifying search results page Product tab

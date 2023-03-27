@@ -34,9 +34,9 @@ public class LoginPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Connexion au compte partenaire')]")
 	public WebElement PartnerAccountSignInHeaderfr;
 	
-	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Inicio de sesi�n de cuenta de socio')]")
+	@FindBy(how = How.XPATH, using = "//h4[contains(text(),'Inicio de sesión de cuenta de socio')]")
 	public WebElement PartnerAccountSignInHeaderesp;
-	
+
 	@FindBy(how = How.XPATH, using = "//button[@class='p3-authentication__header-language-select-toggle']")
 	public WebElement LanguageSelector;
 	

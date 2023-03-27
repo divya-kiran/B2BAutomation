@@ -28,7 +28,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Announcements')]")
 	public WebElement AnnouncementsFooterLink;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Contact Us')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-footer__navigation-item-wrapper']//a[contains(text(),'Contact Us')]")
 	public WebElement ContactUSFooterLink;
 	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Partner Support') and contains (@title,'Partner Support')]")
@@ -73,7 +73,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//img[@alt='LiftMaster']")
 	public WebElement LiftMasterLogo;
 	
-	@FindBy(how = How.ID, using = "search")
+	@FindBy(how = How.TAG_NAME, using = "atomic-search-box")
 	public WebElement HeaderSearchTextBox;
 	
 	@FindBy(how = How.XPATH, using = "//span[text()='Partner Programs']")
@@ -262,12 +262,12 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Garage Safety')]")
 	public WebElement GarageSafetyLink;
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(.,'�tat de la commande')]")
+	@FindBy(how = How.XPATH, using = "//header/nav[@id='headerNavSection']/div[1]/div[2]/ul[1]/li[2]/a[1]")
 	public WebElement frOrderStatusLink;
 	
 	@FindBy(how = How.XPATH, using = "//button[contains(.,'Commande rapide')]")
 	public WebElement frquickOrderLink;
-	
+	//header/nav[@id='headerNavSection']/div[1]/div[2]/ul[1]/li[3]/button[1]
 	@FindBy(how = How.XPATH, using = "//button[contains(@class,'p3-header__navigation-cart p3-button__text miniCart')]")
 	public WebElement frMiniCartFlyer;
 	
@@ -277,7 +277,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Produits')]")
 	public WebElement frProductsTab;
 	
-	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Pi�ces')]")
+	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Pièces')]")
 	public WebElement frPartsTab;
 	
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Ressources')]")
@@ -286,7 +286,7 @@ public class HomePage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//a[contains(.,'Estado del pedido')]")
 	public WebElement espOrderStatusLink;
 	
-	@FindBy(how = How.XPATH, using = "//button[contains(.,'PEDIDO R�PIDO')]")
+	@FindBy(how = How.XPATH, using = "//header/nav[@id='headerNavSection']/div[1]/div[2]/ul[1]/li[3]/button[1]")
 	public WebElement espquickOrderLink;
 	
 	@FindBy(how = How.XPATH, using = "//button[contains(@class,'p3-header__navigation-cart p3-button__text miniCart')]")
