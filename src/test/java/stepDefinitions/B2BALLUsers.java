@@ -62,7 +62,7 @@ public class B2BALLUsers extends BaseClass {
 	public void User_will_log_in_as_US_no_order_with_pricing_user() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"logout");
 		pageLoadTimeout();
-	   sendKeys(loginpage.userName, "NoOrderWithPricing@mailinator.com");
+	   sendKeys(loginpage.userName, "demouatnoorderwithpricing@mailinator.com");
 	   sendKeys(loginpage.password, "Test@123");
 	   click(loginpage.PartnerAccountSignInHeader);
 	   jsClick(loginpage.signinButton);
@@ -72,7 +72,7 @@ public class B2BALLUsers extends BaseClass {
 	public void user_will_log_in_as_US_registered_Payment_Term_user_Non_BBU() throws Throwable {
 		driver.navigate().to(configFileReader.getApplicationUrl()+"logout");
 		pageLoadTimeout();
-	   sendKeys(loginpage.userName, "bala.pradeep@chamberlain.com");
+	   sendKeys(loginpage.userName, "divya.kiran@yahoo.com");
 	   sendKeys(loginpage.password, "Test@123");
 	   click(loginpage.PartnerAccountSignInHeader);
 	   jsClick(loginpage.signinButton);

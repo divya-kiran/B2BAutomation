@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dacfa4a-fd43-455f-a4b8-c0de250b9c4b" name="Changes" comment="Incentives Test Cases are included">
+    <list default="true" id="2dacfa4a-fd43-455f-a4b8-c0de250b9c4b" name="Changes" comment="Non bbu products and users are added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/PDPPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/PDPPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/CheckoutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC100ValidationOfFrenchSite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC100ValidationOfFrenchSite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC101ValidationOfSpanishSite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/ATC101ValidationOfSpanishSite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC05SmokeProductMenuPLPPageNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC05SmokeProductMenuPLPPageNavigation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC06SmokePartsMenuPLPPageNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC06SmokePartsMenuPLPPageNavigation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC07SmokePDPPageValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC07SmokePDPPageValidation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC08SmokeSearchResultValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC08SmokeSearchResultValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/B2BALLUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/B2BALLUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC025ValidationofNonBBUCartPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC025ValidationofNonBBUCartPage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ATC026ValidationofNonBBUcheckoutPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ATC026ValidationofNonBBUcheckoutPage.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "advanced.settings"
+    "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
   <component name="RunManager">
@@ -100,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679853335857</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Incentives Test Cases are included">
+      <created>1679878122817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679878122817</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,17 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated Editshipto and users" />
     <MESSAGE value="Incentives Test Cases are included" />
-    <option name="LAST_COMMIT_MESSAGE" value="Incentives Test Cases are included" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/runners/TestRunner.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Non bbu products and users are added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Non bbu products and users are added" />
   </component>
 </project>

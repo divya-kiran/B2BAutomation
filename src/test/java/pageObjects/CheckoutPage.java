@@ -25,7 +25,7 @@ public class CheckoutPage extends BaseClass{
 	@FindBy(how = How.XPATH, using = "//select[@id='c-ct']")
 	public WebElement PaymentSectionCardType;
 	
-	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Per SB-969, the following item(s) are not available in California: 8155W. Please remove the item(s) from cart or select an address outside of California.')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='p3-dialog__non-bbu-error']")
 	public WebElement NonBBUErrorMessage;
 	
 	@FindBy(how = How.ID, using = "c-cardnumber")
